@@ -1,0 +1,4 @@
+source;share/weeding_mechanism/local_setup.bash
+source;share/weeding_mechanism/local_setup.dsv
+source;share/weeding_mechanism/local_setup.sh
+source;share/weeding_mechanism/local_setup.zsh

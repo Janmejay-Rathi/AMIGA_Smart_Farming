@@ -1,0 +1,15 @@
+/home/jetson-amiga/ros2_ws/install/safety/share/ament_index/resource_index/package_run_dependencies/safety
+/home/jetson-amiga/ros2_ws/install/safety/share/ament_index/resource_index/parent_prefix_path/safety
+/home/jetson-amiga/ros2_ws/install/safety/share/safety/environment/ament_prefix_path.sh
+/home/jetson-amiga/ros2_ws/install/safety/share/safety/environment/ament_prefix_path.dsv
+/home/jetson-amiga/ros2_ws/install/safety/share/safety/environment/path.sh
+/home/jetson-amiga/ros2_ws/install/safety/share/safety/environment/path.dsv
+/home/jetson-amiga/ros2_ws/install/safety/share/safety/local_setup.bash
+/home/jetson-amiga/ros2_ws/install/safety/share/safety/local_setup.sh
+/home/jetson-amiga/ros2_ws/install/safety/share/safety/local_setup.zsh
+/home/jetson-amiga/ros2_ws/install/safety/share/safety/local_setup.dsv
+/home/jetson-amiga/ros2_ws/install/safety/share/safety/package.dsv
+/home/jetson-amiga/ros2_ws/install/safety/share/ament_index/resource_index/packages/safety
+/home/jetson-amiga/ros2_ws/install/safety/share/safety/cmake/safetyConfig.cmake
+/home/jetson-amiga/ros2_ws/install/safety/share/safety/cmake/safetyConfig-version.cmake
+/home/jetson-amiga/ros2_ws/install/safety/share/safety/package.xml

@@ -1,0 +1,9 @@
+/home/jetson-amiga/ros2_ws/build/weeding_mechanism/CMakeFiles/uninstall.dir
+/home/jetson-amiga/ros2_ws/build/weeding_mechanism/CMakeFiles/weeding_mechanism_uninstall.dir
+/home/jetson-amiga/ros2_ws/build/weeding_mechanism/CMakeFiles/test.dir
+/home/jetson-amiga/ros2_ws/build/weeding_mechanism/CMakeFiles/edit_cache.dir
+/home/jetson-amiga/ros2_ws/build/weeding_mechanism/CMakeFiles/rebuild_cache.dir
+/home/jetson-amiga/ros2_ws/build/weeding_mechanism/CMakeFiles/list_install_components.dir
+/home/jetson-amiga/ros2_ws/build/weeding_mechanism/CMakeFiles/install.dir
+/home/jetson-amiga/ros2_ws/build/weeding_mechanism/CMakeFiles/install/local.dir
+/home/jetson-amiga/ros2_ws/build/weeding_mechanism/CMakeFiles/install/strip.dir

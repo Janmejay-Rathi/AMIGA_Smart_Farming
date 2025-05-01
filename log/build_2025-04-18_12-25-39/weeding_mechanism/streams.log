@@ -1,0 +1,20 @@
+[1.251s] Invoking command in '/home/jetson-amiga/ros2_ws/build/weeding_mechanism': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge:/opt/ros/humble /usr/bin/cmake --build /home/jetson-amiga/ros2_ws/build/weeding_mechanism -- -j6 -l6
+[1.360s] Invoked command in '/home/jetson-amiga/ros2_ws/build/weeding_mechanism' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge:/opt/ros/humble /usr/bin/cmake --build /home/jetson-amiga/ros2_ws/build/weeding_mechanism -- -j6 -l6
+[1.384s] Invoking command in '/home/jetson-amiga/ros2_ws/build/weeding_mechanism': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge:/opt/ros/humble /usr/bin/cmake --install /home/jetson-amiga/ros2_ws/build/weeding_mechanism
+[1.406s] -- Install configuration: ""
+[1.407s] -- Up-to-date: /home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/ament_index/resource_index/package_run_dependencies/weeding_mechanism
+[1.407s] -- Up-to-date: /home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/ament_index/resource_index/parent_prefix_path/weeding_mechanism
+[1.407s] -- Up-to-date: /home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/environment/ament_prefix_path.sh
+[1.408s] -- Up-to-date: /home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/environment/ament_prefix_path.dsv
+[1.408s] -- Up-to-date: /home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/environment/path.sh
+[1.408s] -- Up-to-date: /home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/environment/path.dsv
+[1.408s] -- Up-to-date: /home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/local_setup.bash
+[1.409s] -- Up-to-date: /home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/local_setup.sh
+[1.409s] -- Up-to-date: /home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/local_setup.zsh
+[1.409s] -- Up-to-date: /home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/local_setup.dsv
+[1.409s] -- Up-to-date: /home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/package.dsv
+[1.409s] -- Up-to-date: /home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/ament_index/resource_index/packages/weeding_mechanism
+[1.409s] -- Up-to-date: /home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/cmake/weeding_mechanismConfig.cmake
+[1.410s] -- Up-to-date: /home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/cmake/weeding_mechanismConfig-version.cmake
+[1.410s] -- Up-to-date: /home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/package.xml
+[1.415s] Invoked command in '/home/jetson-amiga/ros2_ws/build/weeding_mechanism' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge:/opt/ros/humble /usr/bin/cmake --install /home/jetson-amiga/ros2_ws/build/weeding_mechanism

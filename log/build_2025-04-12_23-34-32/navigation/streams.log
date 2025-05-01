@@ -1,0 +1,60 @@
+[0.611s] Invoking command in '/home/jetson-amiga/ros2_ws/build/navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jetson-amiga/ros2_ws/src/navigation -DCMAKE_INSTALL_PREFIX=/home/jetson-amiga/ros2_ws/install/navigation
+[0.737s] -- The C compiler identification is GNU 11.4.0
+[0.851s] -- The CXX compiler identification is GNU 11.4.0
+[0.874s] -- Detecting C compiler ABI info
+[1.031s] -- Detecting C compiler ABI info - done
+[1.044s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.045s] -- Detecting C compile features
+[1.046s] -- Detecting C compile features - done
+[1.052s] -- Detecting CXX compiler ABI info
+[1.218s] -- Detecting CXX compiler ABI info - done
+[1.232s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.232s] -- Detecting CXX compile features
+[1.233s] -- Detecting CXX compile features - done
+[1.238s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.584s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.793s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.871s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.879s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.894s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.918s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.949s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.033s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.037s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.204s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.256s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.337s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.352s] -- Looking for pthread.h
+[2.502s] -- Looking for pthread.h - found
+[2.503s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.663s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.665s] -- Found Threads: TRUE  
+[2.781s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.972s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.973s] -- Added test 'lint_cmake' to check CMake code style
+[2.974s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.976s] -- Added test 'xmllint' to check XML markup files
+[2.980s] -- Configuring done
+[2.994s] -- Generating done
+[2.999s] -- Build files have been written to: /home/jetson-amiga/ros2_ws/build/navigation
+[3.025s] Invoked command in '/home/jetson-amiga/ros2_ws/build/navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jetson-amiga/ros2_ws/src/navigation -DCMAKE_INSTALL_PREFIX=/home/jetson-amiga/ros2_ws/install/navigation
+[3.029s] Invoking command in '/home/jetson-amiga/ros2_ws/build/navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jetson-amiga/ros2_ws/build/navigation -- -j6 -l6
+[3.146s] Invoked command in '/home/jetson-amiga/ros2_ws/build/navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jetson-amiga/ros2_ws/build/navigation -- -j6 -l6
+[3.149s] Invoking command in '/home/jetson-amiga/ros2_ws/build/navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jetson-amiga/ros2_ws/build/navigation
+[3.164s] -- Install configuration: ""
+[3.165s] -- Installing: /home/jetson-amiga/ros2_ws/install/navigation/share/ament_index/resource_index/package_run_dependencies/navigation
+[3.165s] -- Installing: /home/jetson-amiga/ros2_ws/install/navigation/share/ament_index/resource_index/parent_prefix_path/navigation
+[3.165s] -- Installing: /home/jetson-amiga/ros2_ws/install/navigation/share/navigation/environment/ament_prefix_path.sh
+[3.166s] -- Installing: /home/jetson-amiga/ros2_ws/install/navigation/share/navigation/environment/ament_prefix_path.dsv
+[3.166s] -- Installing: /home/jetson-amiga/ros2_ws/install/navigation/share/navigation/environment/path.sh
+[3.167s] -- Installing: /home/jetson-amiga/ros2_ws/install/navigation/share/navigation/environment/path.dsv
+[3.167s] -- Installing: /home/jetson-amiga/ros2_ws/install/navigation/share/navigation/local_setup.bash
+[3.167s] -- Installing: /home/jetson-amiga/ros2_ws/install/navigation/share/navigation/local_setup.sh
+[3.167s] -- Installing: /home/jetson-amiga/ros2_ws/install/navigation/share/navigation/local_setup.zsh
+[3.167s] -- Installing: /home/jetson-amiga/ros2_ws/install/navigation/share/navigation/local_setup.dsv
+[3.168s] -- Installing: /home/jetson-amiga/ros2_ws/install/navigation/share/navigation/package.dsv
+[3.168s] -- Installing: /home/jetson-amiga/ros2_ws/install/navigation/share/ament_index/resource_index/packages/navigation
+[3.168s] -- Installing: /home/jetson-amiga/ros2_ws/install/navigation/share/navigation/cmake/navigationConfig.cmake
+[3.169s] -- Installing: /home/jetson-amiga/ros2_ws/install/navigation/share/navigation/cmake/navigationConfig-version.cmake
+[3.169s] -- Installing: /home/jetson-amiga/ros2_ws/install/navigation/share/navigation/package.xml
+[3.269s] Invoked command in '/home/jetson-amiga/ros2_ws/build/navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jetson-amiga/ros2_ws/build/navigation

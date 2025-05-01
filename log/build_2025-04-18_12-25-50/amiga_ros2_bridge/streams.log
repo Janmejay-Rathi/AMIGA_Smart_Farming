@@ -1,0 +1,24 @@
+[2.107s] Invoking command in '/home/jetson-amiga/ros2_ws/src/amiga-ros2-bridge/amiga_ros2_bridge': PYTHONPATH=/home/jetson-amiga/ros2_ws/build/amiga_ros2_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/amiga_ros2_bridge build --build-base /home/jetson-amiga/ros2_ws/build/amiga_ros2_bridge/build install --record /home/jetson-amiga/ros2_ws/build/amiga_ros2_bridge/install.log --single-version-externally-managed install_data
+[2.658s] running egg_info
+[2.659s] writing ../../../build/amiga_ros2_bridge/amiga_ros2_bridge.egg-info/PKG-INFO
+[2.660s] writing dependency_links to ../../../build/amiga_ros2_bridge/amiga_ros2_bridge.egg-info/dependency_links.txt
+[2.660s] writing entry points to ../../../build/amiga_ros2_bridge/amiga_ros2_bridge.egg-info/entry_points.txt
+[2.661s] writing requirements to ../../../build/amiga_ros2_bridge/amiga_ros2_bridge.egg-info/requires.txt
+[2.661s] writing top-level names to ../../../build/amiga_ros2_bridge/amiga_ros2_bridge.egg-info/top_level.txt
+[2.665s] reading manifest file '../../../build/amiga_ros2_bridge/amiga_ros2_bridge.egg-info/SOURCES.txt'
+[2.667s] writing manifest file '../../../build/amiga_ros2_bridge/amiga_ros2_bridge.egg-info/SOURCES.txt'
+[2.668s] running build
+[2.668s] running build_py
+[2.672s] running install
+[2.672s] running install_lib
+[2.676s] running install_data
+[2.676s] running install_egg_info
+[2.680s] removing '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/lib/python3.10/site-packages/amiga_ros2_bridge-0.0.0-py3.10.egg-info' (and everything under it)
+[2.681s] Copying ../../../build/amiga_ros2_bridge/amiga_ros2_bridge.egg-info to /home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/lib/python3.10/site-packages/amiga_ros2_bridge-0.0.0-py3.10.egg-info
+[2.683s] running install_scripts
+[2.729s] Installing amiga_streams script to /home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/lib/amiga_ros2_bridge
+[2.729s] Installing clock script to /home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/lib/amiga_ros2_bridge
+[2.729s] Installing twist_control script to /home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/lib/amiga_ros2_bridge
+[2.730s] Installing twist_wasd script to /home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/lib/amiga_ros2_bridge
+[2.730s] writing list of installed files to '/home/jetson-amiga/ros2_ws/build/amiga_ros2_bridge/install.log'
+[2.809s] Invoked command in '/home/jetson-amiga/ros2_ws/src/amiga-ros2-bridge/amiga_ros2_bridge' returned '0': PYTHONPATH=/home/jetson-amiga/ros2_ws/build/amiga_ros2_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/amiga_ros2_bridge build --build-base /home/jetson-amiga/ros2_ws/build/amiga_ros2_bridge/build install --record /home/jetson-amiga/ros2_ws/build/amiga_ros2_bridge/install.log --single-version-externally-managed install_data

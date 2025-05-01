@@ -1,0 +1,15 @@
+/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/ament_index/resource_index/package_run_dependencies/weeding_mechanism
+/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/ament_index/resource_index/parent_prefix_path/weeding_mechanism
+/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/environment/ament_prefix_path.sh
+/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/environment/ament_prefix_path.dsv
+/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/environment/path.sh
+/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/environment/path.dsv
+/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/local_setup.bash
+/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/local_setup.sh
+/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/local_setup.zsh
+/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/local_setup.dsv
+/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/package.dsv
+/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/ament_index/resource_index/packages/weeding_mechanism
+/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/cmake/weeding_mechanismConfig.cmake
+/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/cmake/weeding_mechanismConfig-version.cmake
+/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/package.xml

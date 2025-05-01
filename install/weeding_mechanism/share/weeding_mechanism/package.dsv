@@ -1,0 +1,8 @@
+source;share/weeding_mechanism/hook/cmake_prefix_path.ps1
+source;share/weeding_mechanism/hook/cmake_prefix_path.dsv
+source;share/weeding_mechanism/hook/cmake_prefix_path.sh
+source;share/weeding_mechanism/local_setup.bash
+source;share/weeding_mechanism/local_setup.dsv
+source;share/weeding_mechanism/local_setup.ps1
+source;share/weeding_mechanism/local_setup.sh
+source;share/weeding_mechanism/local_setup.zsh

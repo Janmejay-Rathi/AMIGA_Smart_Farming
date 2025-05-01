@@ -1,0 +1,332 @@
+[0.249s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.249s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff84f3d9f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff84f3d480>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff84f3d480>>, mixin_verb=('build',))
+[0.630s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.631s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.631s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.631s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.631s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.631s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.631s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jetson-amiga/ros2_ws'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge) by extension 'ignore'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge) by extension 'ignore_ament_install'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge) by extensions ['colcon_pkg']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge) by extension 'colcon_pkg'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge) by extensions ['colcon_meta']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge) by extension 'colcon_meta'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge) by extensions ['ros']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge) by extension 'ros'
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge) by extensions ['cmake', 'python']
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge) by extension 'cmake'
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge) by extension 'python'
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge) by extensions ['python_setup_py']
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge) by extension 'python_setup_py'
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge/amiga_ros2_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge/amiga_ros2_bridge) by extension 'ignore'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge/amiga_ros2_bridge) by extension 'ignore_ament_install'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge/amiga_ros2_bridge) by extensions ['colcon_pkg']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge/amiga_ros2_bridge) by extension 'colcon_pkg'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge/amiga_ros2_bridge) by extensions ['colcon_meta']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge/amiga_ros2_bridge) by extension 'colcon_meta'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge/amiga_ros2_bridge) by extensions ['ros']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/amiga-ros2-bridge/amiga_ros2_bridge) by extension 'ros'
+[0.670s] DEBUG:colcon.colcon_core.package_identification:Package 'src/amiga-ros2-bridge/amiga_ros2_bridge' with type 'ros.ament_python' and name 'amiga_ros2_bridge'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ignore'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ignore_ament_install'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['colcon_pkg']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'colcon_pkg'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['colcon_meta']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'colcon_meta'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['ros']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ros'
+[0.672s] DEBUG:colcon.colcon_core.package_identification:Package 'src/navigation' with type 'ros.ament_cmake' and name 'navigation'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/safety) by extensions ['ignore', 'ignore_ament_install']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/safety) by extension 'ignore'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/safety) by extension 'ignore_ament_install'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/safety) by extensions ['colcon_pkg']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/safety) by extension 'colcon_pkg'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/safety) by extensions ['colcon_meta']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/safety) by extension 'colcon_meta'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/safety) by extensions ['ros']
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/safety) by extension 'ros'
+[0.675s] DEBUG:colcon.colcon_core.package_identification:Package 'src/safety' with type 'ros.ament_cmake' and name 'safety'
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/weeding_mechanism) by extensions ['ignore', 'ignore_ament_install']
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/weeding_mechanism) by extension 'ignore'
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/weeding_mechanism) by extension 'ignore_ament_install'
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/weeding_mechanism) by extensions ['colcon_pkg']
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/weeding_mechanism) by extension 'colcon_pkg'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/weeding_mechanism) by extensions ['colcon_meta']
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/weeding_mechanism) by extension 'colcon_meta'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/weeding_mechanism) by extensions ['ros']
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/weeding_mechanism) by extension 'ros'
+[0.677s] DEBUG:colcon.colcon_core.package_identification:Package 'src/weeding_mechanism' with type 'ros.ament_cmake' and name 'weeding_mechanism'
+[0.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.678s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.678s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.678s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.753s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.753s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.758s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 271 installed packages in /opt/ros/humble
+[0.761s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'amiga_ros2_bridge' build argument 'cmake_args' from command line to 'None'
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'amiga_ros2_bridge' build argument 'cmake_target' from command line to 'None'
+[0.845s] Level 5:colcon.colcon_core.verb:set package 'amiga_ros2_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.845s] Level 5:colcon.colcon_core.verb:set package 'amiga_ros2_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[0.845s] Level 5:colcon.colcon_core.verb:set package 'amiga_ros2_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[0.845s] Level 5:colcon.colcon_core.verb:set package 'amiga_ros2_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[0.845s] Level 5:colcon.colcon_core.verb:set package 'amiga_ros2_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[0.845s] Level 5:colcon.colcon_core.verb:set package 'amiga_ros2_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[0.845s] Level 5:colcon.colcon_core.verb:set package 'amiga_ros2_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.845s] DEBUG:colcon.colcon_core.verb:Building package 'amiga_ros2_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson-amiga/ros2_ws/build/amiga_ros2_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge', 'merge_install': False, 'path': '/home/jetson-amiga/ros2_ws/src/amiga-ros2-bridge/amiga_ros2_bridge', 'symlink_install': False, 'test_result_base': None}
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_args' from command line to 'None'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_target' from command line to 'None'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.846s] DEBUG:colcon.colcon_core.verb:Building package 'navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson-amiga/ros2_ws/build/navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson-amiga/ros2_ws/install/navigation', 'merge_install': False, 'path': '/home/jetson-amiga/ros2_ws/src/navigation', 'symlink_install': False, 'test_result_base': None}
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'safety' build argument 'cmake_args' from command line to 'None'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'safety' build argument 'cmake_target' from command line to 'None'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'safety' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'safety' build argument 'cmake_clean_cache' from command line to 'False'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'safety' build argument 'cmake_clean_first' from command line to 'False'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'safety' build argument 'cmake_force_configure' from command line to 'False'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'safety' build argument 'ament_cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'safety' build argument 'catkin_cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'safety' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.848s] DEBUG:colcon.colcon_core.verb:Building package 'safety' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson-amiga/ros2_ws/build/safety', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson-amiga/ros2_ws/install/safety', 'merge_install': False, 'path': '/home/jetson-amiga/ros2_ws/src/safety', 'symlink_install': False, 'test_result_base': None}
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'weeding_mechanism' build argument 'cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'weeding_mechanism' build argument 'cmake_target' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'weeding_mechanism' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.849s] Level 5:colcon.colcon_core.verb:set package 'weeding_mechanism' build argument 'cmake_clean_cache' from command line to 'False'
+[0.849s] Level 5:colcon.colcon_core.verb:set package 'weeding_mechanism' build argument 'cmake_clean_first' from command line to 'False'
+[0.849s] Level 5:colcon.colcon_core.verb:set package 'weeding_mechanism' build argument 'cmake_force_configure' from command line to 'False'
+[0.849s] Level 5:colcon.colcon_core.verb:set package 'weeding_mechanism' build argument 'ament_cmake_args' from command line to 'None'
+[0.849s] Level 5:colcon.colcon_core.verb:set package 'weeding_mechanism' build argument 'catkin_cmake_args' from command line to 'None'
+[0.849s] Level 5:colcon.colcon_core.verb:set package 'weeding_mechanism' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.849s] DEBUG:colcon.colcon_core.verb:Building package 'weeding_mechanism' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson-amiga/ros2_ws/build/weeding_mechanism', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson-amiga/ros2_ws/install/weeding_mechanism', 'merge_install': False, 'path': '/home/jetson-amiga/ros2_ws/src/weeding_mechanism', 'symlink_install': False, 'test_result_base': None}
+[0.849s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.852s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.852s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jetson-amiga/ros2_ws/src/amiga-ros2-bridge/amiga_ros2_bridge' with build type 'ament_python'
+[0.853s] Level 1:colcon.colcon_core.shell:create_environment_hook('amiga_ros2_bridge', 'ament_prefix_path')
+[0.857s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/share/amiga_ros2_bridge/hook/ament_prefix_path.ps1'
+[0.859s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/share/amiga_ros2_bridge/hook/ament_prefix_path.dsv'
+[0.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/share/amiga_ros2_bridge/hook/ament_prefix_path.sh'
+[0.862s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.862s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.869s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jetson-amiga/ros2_ws/src/navigation' with build type 'ament_cmake'
+[0.869s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jetson-amiga/ros2_ws/src/navigation'
+[0.870s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.870s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.876s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jetson-amiga/ros2_ws/src/safety' with build type 'ament_cmake'
+[0.876s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jetson-amiga/ros2_ws/src/safety'
+[0.877s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.877s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.884s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jetson-amiga/ros2_ws/src/weeding_mechanism' with build type 'ament_cmake'
+[0.884s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jetson-amiga/ros2_ws/src/weeding_mechanism'
+[0.885s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.885s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.470s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jetson-amiga/ros2_ws/src/amiga-ros2-bridge/amiga_ros2_bridge'
+[1.471s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.471s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson-amiga/ros2_ws/build/navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jetson-amiga/ros2_ws/src/navigation -DCMAKE_INSTALL_PREFIX=/home/jetson-amiga/ros2_ws/install/navigation
+[1.491s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson-amiga/ros2_ws/build/safety': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jetson-amiga/ros2_ws/src/safety -DCMAKE_INSTALL_PREFIX=/home/jetson-amiga/ros2_ws/install/safety
+[1.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson-amiga/ros2_ws/build/weeding_mechanism': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jetson-amiga/ros2_ws/src/weeding_mechanism -DCMAKE_INSTALL_PREFIX=/home/jetson-amiga/ros2_ws/install/weeding_mechanism
+[2.337s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson-amiga/ros2_ws/src/amiga-ros2-bridge/amiga_ros2_bridge': PYTHONPATH=/home/jetson-amiga/ros2_ws/build/amiga_ros2_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/amiga_ros2_bridge build --build-base /home/jetson-amiga/ros2_ws/build/amiga_ros2_bridge/build install --record /home/jetson-amiga/ros2_ws/build/amiga_ros2_bridge/install.log --single-version-externally-managed install_data
+[3.064s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson-amiga/ros2_ws/src/amiga-ros2-bridge/amiga_ros2_bridge' returned '0': PYTHONPATH=/home/jetson-amiga/ros2_ws/build/amiga_ros2_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/amiga_ros2_bridge build --build-base /home/jetson-amiga/ros2_ws/build/amiga_ros2_bridge/build install --record /home/jetson-amiga/ros2_ws/build/amiga_ros2_bridge/install.log --single-version-externally-managed install_data
+[3.071s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge' for CMake module files
+[3.074s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge' for CMake config files
+[3.077s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/lib'
+[3.077s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/bin'
+[3.078s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/lib/pkgconfig/amiga_ros2_bridge.pc'
+[3.079s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/lib/python3.10/site-packages'
+[3.079s] Level 1:colcon.colcon_core.shell:create_environment_hook('amiga_ros2_bridge', 'pythonpath')
+[3.080s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/share/amiga_ros2_bridge/hook/pythonpath.ps1'
+[3.081s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/share/amiga_ros2_bridge/hook/pythonpath.dsv'
+[3.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/share/amiga_ros2_bridge/hook/pythonpath.sh'
+[3.085s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/bin'
+[3.085s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amiga_ros2_bridge)
+[3.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/share/amiga_ros2_bridge/package.ps1'
+[3.089s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/share/amiga_ros2_bridge/package.dsv'
+[3.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/share/amiga_ros2_bridge/package.sh'
+[3.093s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/share/amiga_ros2_bridge/package.bash'
+[3.095s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/share/amiga_ros2_bridge/package.zsh'
+[3.097s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson-amiga/ros2_ws/install/amiga_ros2_bridge/share/colcon-core/packages/amiga_ros2_bridge)
+[3.894s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson-amiga/ros2_ws/build/navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jetson-amiga/ros2_ws/src/navigation -DCMAKE_INSTALL_PREFIX=/home/jetson-amiga/ros2_ws/install/navigation
+[3.899s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson-amiga/ros2_ws/build/navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jetson-amiga/ros2_ws/build/navigation -- -j6 -l6
+[3.902s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson-amiga/ros2_ws/build/safety' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jetson-amiga/ros2_ws/src/safety -DCMAKE_INSTALL_PREFIX=/home/jetson-amiga/ros2_ws/install/safety
+[3.905s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson-amiga/ros2_ws/build/safety': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jetson-amiga/ros2_ws/build/safety -- -j6 -l6
+[3.923s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson-amiga/ros2_ws/build/weeding_mechanism' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jetson-amiga/ros2_ws/src/weeding_mechanism -DCMAKE_INSTALL_PREFIX=/home/jetson-amiga/ros2_ws/install/weeding_mechanism
+[3.928s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson-amiga/ros2_ws/build/weeding_mechanism': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jetson-amiga/ros2_ws/build/weeding_mechanism -- -j6 -l6
+[3.986s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson-amiga/ros2_ws/build/safety' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jetson-amiga/ros2_ws/build/safety -- -j6 -l6
+[4.013s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson-amiga/ros2_ws/build/safety': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jetson-amiga/ros2_ws/build/safety
+[4.015s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson-amiga/ros2_ws/build/navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jetson-amiga/ros2_ws/build/navigation -- -j6 -l6
+[4.019s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson-amiga/ros2_ws/build/navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jetson-amiga/ros2_ws/build/navigation
+[4.022s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson-amiga/ros2_ws/build/weeding_mechanism' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jetson-amiga/ros2_ws/build/weeding_mechanism -- -j6 -l6
+[4.025s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson-amiga/ros2_ws/build/weeding_mechanism': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jetson-amiga/ros2_ws/build/weeding_mechanism
+[4.039s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(safety)
+[4.040s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/safety' for CMake module files
+[4.041s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson-amiga/ros2_ws/build/safety' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jetson-amiga/ros2_ws/build/safety
+[4.045s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/safety' for CMake config files
+[4.049s] Level 1:colcon.colcon_core.shell:create_environment_hook('safety', 'cmake_prefix_path')
+[4.050s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson-amiga/ros2_ws/install/safety/share/safety/hook/cmake_prefix_path.ps1'
+[4.052s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson-amiga/ros2_ws/install/safety/share/safety/hook/cmake_prefix_path.dsv'
+[4.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson-amiga/ros2_ws/install/safety/share/safety/hook/cmake_prefix_path.sh'
+[4.056s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/safety/bin'
+[4.056s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/safety/lib/pkgconfig/safety.pc'
+[4.057s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/safety/lib/python3.10/site-packages'
+[4.058s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/safety/bin'
+[4.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/safety/share/safety/package.ps1'
+[4.060s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson-amiga/ros2_ws/install/safety/share/safety/package.dsv'
+[4.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/safety/share/safety/package.sh'
+[4.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/safety/share/safety/package.bash'
+[4.065s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/safety/share/safety/package.zsh'
+[4.066s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson-amiga/ros2_ws/install/safety/share/colcon-core/packages/safety)
+[4.069s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(safety)
+[4.069s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/safety' for CMake module files
+[4.071s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/safety' for CMake config files
+[4.072s] Level 1:colcon.colcon_core.shell:create_environment_hook('safety', 'cmake_prefix_path')
+[4.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson-amiga/ros2_ws/install/safety/share/safety/hook/cmake_prefix_path.ps1'
+[4.074s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson-amiga/ros2_ws/install/safety/share/safety/hook/cmake_prefix_path.dsv'
+[4.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson-amiga/ros2_ws/install/safety/share/safety/hook/cmake_prefix_path.sh'
+[4.078s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/safety/bin'
+[4.078s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/safety/lib/pkgconfig/safety.pc'
+[4.079s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/safety/lib/python3.10/site-packages'
+[4.079s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/safety/bin'
+[4.081s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/safety/share/safety/package.ps1'
+[4.082s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson-amiga/ros2_ws/install/safety/share/safety/package.dsv'
+[4.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/safety/share/safety/package.sh'
+[4.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/safety/share/safety/package.bash'
+[4.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/safety/share/safety/package.zsh'
+[4.089s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson-amiga/ros2_ws/install/safety/share/colcon-core/packages/safety)
+[4.094s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(weeding_mechanism)
+[4.095s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/weeding_mechanism' for CMake module files
+[4.098s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson-amiga/ros2_ws/build/weeding_mechanism' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jetson-amiga/ros2_ws/build/weeding_mechanism
+[4.098s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/weeding_mechanism' for CMake config files
+[4.099s] Level 1:colcon.colcon_core.shell:create_environment_hook('weeding_mechanism', 'cmake_prefix_path')
+[4.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/hook/cmake_prefix_path.ps1'
+[4.102s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/hook/cmake_prefix_path.dsv'
+[4.103s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/hook/cmake_prefix_path.sh'
+[4.105s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/bin'
+[4.105s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/lib/pkgconfig/weeding_mechanism.pc'
+[4.106s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/lib/python3.10/site-packages'
+[4.107s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/bin'
+[4.108s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/package.ps1'
+[4.109s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/package.dsv'
+[4.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/package.sh'
+[4.113s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/package.bash'
+[4.114s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/package.zsh'
+[4.115s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/colcon-core/packages/weeding_mechanism)
+[4.117s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(weeding_mechanism)
+[4.118s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/weeding_mechanism' for CMake module files
+[4.119s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/weeding_mechanism' for CMake config files
+[4.120s] Level 1:colcon.colcon_core.shell:create_environment_hook('weeding_mechanism', 'cmake_prefix_path')
+[4.121s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/hook/cmake_prefix_path.ps1'
+[4.122s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/hook/cmake_prefix_path.dsv'
+[4.123s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/hook/cmake_prefix_path.sh'
+[4.125s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/bin'
+[4.125s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/lib/pkgconfig/weeding_mechanism.pc'
+[4.126s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/lib/python3.10/site-packages'
+[4.126s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/bin'
+[4.127s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/package.ps1'
+[4.129s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/package.dsv'
+[4.130s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/package.sh'
+[4.131s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/package.bash'
+[4.133s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/weeding_mechanism/package.zsh'
+[4.134s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson-amiga/ros2_ws/install/weeding_mechanism/share/colcon-core/packages/weeding_mechanism)
+[4.135s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navigation)
+[4.135s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/navigation' for CMake module files
+[4.139s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson-amiga/ros2_ws/build/navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jetson-amiga/ros2_ws/build/navigation
+[4.139s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/navigation' for CMake config files
+[4.140s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation', 'cmake_prefix_path')
+[4.140s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson-amiga/ros2_ws/install/navigation/share/navigation/hook/cmake_prefix_path.ps1'
+[4.142s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson-amiga/ros2_ws/install/navigation/share/navigation/hook/cmake_prefix_path.dsv'
+[4.142s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson-amiga/ros2_ws/install/navigation/share/navigation/hook/cmake_prefix_path.sh'
+[4.144s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/navigation/bin'
+[4.144s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/navigation/lib/pkgconfig/navigation.pc'
+[4.145s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/navigation/lib/python3.10/site-packages'
+[4.145s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/navigation/bin'
+[4.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/navigation/share/navigation/package.ps1'
+[4.147s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson-amiga/ros2_ws/install/navigation/share/navigation/package.dsv'
+[4.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/navigation/share/navigation/package.sh'
+[4.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/navigation/share/navigation/package.bash'
+[4.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/navigation/share/navigation/package.zsh'
+[4.151s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson-amiga/ros2_ws/install/navigation/share/colcon-core/packages/navigation)
+[4.153s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navigation)
+[4.153s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/navigation' for CMake module files
+[4.154s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/navigation' for CMake config files
+[4.155s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation', 'cmake_prefix_path')
+[4.155s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson-amiga/ros2_ws/install/navigation/share/navigation/hook/cmake_prefix_path.ps1'
+[4.156s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson-amiga/ros2_ws/install/navigation/share/navigation/hook/cmake_prefix_path.dsv'
+[4.157s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson-amiga/ros2_ws/install/navigation/share/navigation/hook/cmake_prefix_path.sh'
+[4.158s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/navigation/bin'
+[4.159s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/navigation/lib/pkgconfig/navigation.pc'
+[4.159s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/navigation/lib/python3.10/site-packages'
+[4.160s] Level 1:colcon.colcon_core.environment:checking '/home/jetson-amiga/ros2_ws/install/navigation/bin'
+[4.160s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/navigation/share/navigation/package.ps1'
+[4.162s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson-amiga/ros2_ws/install/navigation/share/navigation/package.dsv'
+[4.163s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/navigation/share/navigation/package.sh'
+[4.164s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/navigation/share/navigation/package.bash'
+[4.165s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson-amiga/ros2_ws/install/navigation/share/navigation/package.zsh'
+[4.166s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson-amiga/ros2_ws/install/navigation/share/colcon-core/packages/navigation)
+[4.167s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.168s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.168s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.168s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.184s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.185s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.185s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.229s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.230s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson-amiga/ros2_ws/install/local_setup.ps1'
+[4.232s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jetson-amiga/ros2_ws/install/_local_setup_util_ps1.py'
+[4.235s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson-amiga/ros2_ws/install/setup.ps1'
+[4.237s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson-amiga/ros2_ws/install/local_setup.sh'
+[4.239s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jetson-amiga/ros2_ws/install/_local_setup_util_sh.py'
+[4.240s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson-amiga/ros2_ws/install/setup.sh'
+[4.242s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson-amiga/ros2_ws/install/local_setup.bash'
+[4.243s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson-amiga/ros2_ws/install/setup.bash'
+[4.245s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson-amiga/ros2_ws/install/local_setup.zsh'
+[4.246s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson-amiga/ros2_ws/install/setup.zsh'

@@ -1,0 +1,9 @@
+/home/jetson-amiga/ros2_ws/build/safety/CMakeFiles/uninstall.dir
+/home/jetson-amiga/ros2_ws/build/safety/CMakeFiles/safety_uninstall.dir
+/home/jetson-amiga/ros2_ws/build/safety/CMakeFiles/test.dir
+/home/jetson-amiga/ros2_ws/build/safety/CMakeFiles/edit_cache.dir
+/home/jetson-amiga/ros2_ws/build/safety/CMakeFiles/rebuild_cache.dir
+/home/jetson-amiga/ros2_ws/build/safety/CMakeFiles/list_install_components.dir
+/home/jetson-amiga/ros2_ws/build/safety/CMakeFiles/install.dir
+/home/jetson-amiga/ros2_ws/build/safety/CMakeFiles/install/local.dir
+/home/jetson-amiga/ros2_ws/build/safety/CMakeFiles/install/strip.dir

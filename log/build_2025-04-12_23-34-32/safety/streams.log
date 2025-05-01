@@ -1,0 +1,60 @@
+[0.613s] Invoking command in '/home/jetson-amiga/ros2_ws/build/safety': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jetson-amiga/ros2_ws/src/safety -DCMAKE_INSTALL_PREFIX=/home/jetson-amiga/ros2_ws/install/safety
+[0.727s] -- The C compiler identification is GNU 11.4.0
+[0.844s] -- The CXX compiler identification is GNU 11.4.0
+[0.859s] -- Detecting C compiler ABI info
+[1.008s] -- Detecting C compiler ABI info - done
+[1.028s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.029s] -- Detecting C compile features
+[1.030s] -- Detecting C compile features - done
+[1.040s] -- Detecting CXX compiler ABI info
+[1.212s] -- Detecting CXX compiler ABI info - done
+[1.237s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.238s] -- Detecting CXX compile features
+[1.240s] -- Detecting CXX compile features - done
+[1.248s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.621s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.814s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.887s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.896s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.912s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.935s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.966s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.049s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.054s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.213s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.265s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.348s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.363s] -- Looking for pthread.h
+[2.514s] -- Looking for pthread.h - found
+[2.515s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.669s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.671s] -- Found Threads: TRUE  
+[2.785s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.965s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.966s] -- Added test 'lint_cmake' to check CMake code style
+[2.967s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.969s] -- Added test 'xmllint' to check XML markup files
+[2.973s] -- Configuring done
+[2.987s] -- Generating done
+[2.992s] -- Build files have been written to: /home/jetson-amiga/ros2_ws/build/safety
+[3.025s] Invoked command in '/home/jetson-amiga/ros2_ws/build/safety' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jetson-amiga/ros2_ws/src/safety -DCMAKE_INSTALL_PREFIX=/home/jetson-amiga/ros2_ws/install/safety
+[3.027s] Invoking command in '/home/jetson-amiga/ros2_ws/build/safety': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jetson-amiga/ros2_ws/build/safety -- -j6 -l6
+[3.109s] Invoked command in '/home/jetson-amiga/ros2_ws/build/safety' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jetson-amiga/ros2_ws/build/safety -- -j6 -l6
+[3.136s] Invoking command in '/home/jetson-amiga/ros2_ws/build/safety': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jetson-amiga/ros2_ws/build/safety
+[3.153s] -- Install configuration: ""
+[3.153s] -- Installing: /home/jetson-amiga/ros2_ws/install/safety/share/ament_index/resource_index/package_run_dependencies/safety
+[3.155s] -- Installing: /home/jetson-amiga/ros2_ws/install/safety/share/ament_index/resource_index/parent_prefix_path/safety
+[3.155s] -- Installing: /home/jetson-amiga/ros2_ws/install/safety/share/safety/environment/ament_prefix_path.sh
+[3.155s] -- Installing: /home/jetson-amiga/ros2_ws/install/safety/share/safety/environment/ament_prefix_path.dsv
+[3.156s] -- Installing: /home/jetson-amiga/ros2_ws/install/safety/share/safety/environment/path.sh
+[3.156s] -- Installing: /home/jetson-amiga/ros2_ws/install/safety/share/safety/environment/path.dsv
+[3.156s] -- Installing: /home/jetson-amiga/ros2_ws/install/safety/share/safety/local_setup.bash
+[3.157s] -- Installing: /home/jetson-amiga/ros2_ws/install/safety/share/safety/local_setup.sh
+[3.157s] -- Installing: /home/jetson-amiga/ros2_ws/install/safety/share/safety/local_setup.zsh
+[3.158s] -- Installing: /home/jetson-amiga/ros2_ws/install/safety/share/safety/local_setup.dsv
+[3.158s] -- Installing: /home/jetson-amiga/ros2_ws/install/safety/share/safety/package.dsv
+[3.158s] -- Installing: /home/jetson-amiga/ros2_ws/install/safety/share/ament_index/resource_index/packages/safety
+[3.159s] -- Installing: /home/jetson-amiga/ros2_ws/install/safety/share/safety/cmake/safetyConfig.cmake
+[3.159s] -- Installing: /home/jetson-amiga/ros2_ws/install/safety/share/safety/cmake/safetyConfig-version.cmake
+[3.159s] -- Installing: /home/jetson-amiga/ros2_ws/install/safety/share/safety/package.xml
+[3.164s] Invoked command in '/home/jetson-amiga/ros2_ws/build/safety' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jetson-amiga/ros2_ws/build/safety
