@@ -1,0 +1,11 @@
+bags/
+*.bag
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.zip
+*.tar.gz
+*.log
+*.npy
+*.npz

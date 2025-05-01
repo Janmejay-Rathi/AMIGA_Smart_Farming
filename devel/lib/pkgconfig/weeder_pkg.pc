@@ -1,0 +1,8 @@
+prefix=/home/jurathi2/catkin_ws/devel
+
+Name: weeder_pkg
+Description: Description of weeder_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

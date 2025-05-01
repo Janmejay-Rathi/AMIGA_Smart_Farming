@@ -1,0 +1,2 @@
+amiga-ros-bridge:navigation_pkg:safety_pkg:weeder_pkg
+-DCATKIN_DEVEL_PREFIX=/home/jurathi2/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jurathi2/catkin_ws/install -G Unix Makefiles
