@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="amiga_sim">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.587273529285794 0.348616943505135 0.78377642743606" rpy="0 0 0" />
+      <mass value="86.4440274940804" />
+      <inertia ixx="14.1409037526016" ixy="0.00100506323760924" ixz="0.000100431046158627" iyy="5.14210683138064" iyz="-0.00184999725161878" izz="18.8095118788223" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://amiga_sim/meshes/base_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.674509803921569 0.709803921568627 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://amiga_sim/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="br_wheel_link">
+    <inertial>
+      <origin xyz="-1.5872E-07 -0.396 -0.00037222" rpy="0 0 0" />
+      <mass value="5.9095" />
+      <inertia ixx="0.064219" ixy="9.3894E-07" ixz="-6.5889E-08" iyy="0.064218" iyz="-3.839E-08" izz="0.1164" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0.4 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://amiga_sim/meshes/br_wheel_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.4 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://amiga_sim/meshes/br_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="br_wheel_joint" type="continuous">
+    <origin xyz="0.91244 -0.14953 0.42506" rpy="1.5708 0 1.5708" />
+    <parent link="base_link" />
+    <child link="br_wheel_link" />
+    <axis xyz="0 0 -1" />
+    <dynamics damping="0.1" friction="1" />
+  </joint>
+  <link name="bl_wheel_link">
+    <inertial>
+      <origin xyz="-1.587E-07 0.396 0.00037222" rpy="0 0 0" />
+      <mass value="5.9095" />
+      <inertia ixx="0.064219" ixy="-9.3894E-07" ixz="6.5889E-08" iyy="0.064218" iyz="-3.839E-08" izz="0.1164" />
+    </inertial>
+    <visual>
+      <origin xyz="0 -0.4 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://amiga_sim/meshes/bl_wheel_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.4 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://amiga_sim/meshes/bl_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="bl_wheel_joint" type="continuous">
+    <origin xyz="0.27384 -0.15588 0.42506" rpy="-1.5708 0 -1.5708" />
+    <parent link="base_link" />
+    <child link="bl_wheel_link" />
+    <axis xyz="0 0 -1" />
+    <dynamics damping="0.1" friction="1" />
+  </joint>
+  <link name="fl_wheel_link">
+    <inertial>
+      <origin xyz="-1.6171E-07 0.396 0.00037222" rpy="0 0 0" />
+      <mass value="5.9095" />
+      <inertia ixx="0.064219" ixy="-9.4004E-07" ixz="6.5887E-08" iyy="0.064218" iyz="-3.8393E-08" izz="0.1164" />
+    </inertial>
+    <visual>
+      <origin xyz="0 -0.4 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://amiga_sim/meshes/fl_wheel_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.4 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://amiga_sim/meshes/fl_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fl_wheel_joint" type="continuous">
+    <origin xyz="0.27384 0.94812 0.42506" rpy="-1.5708 0 -1.5708" />
+    <parent link="base_link" />
+    <child link="fl_wheel_link" />
+    <axis xyz="0 0 -1" />
+    <dynamics damping="0.1" friction="1" />
+  </joint>
+  <link name="fr_wheel_link">
+    <inertial>
+      <origin xyz="-1.5843E-07 -0.396 -0.00037222" rpy="0 0 0" />
+      <mass value="5.9095" />
+      <inertia ixx="0.064219" ixy="9.3904E-07" ixz="-6.5889E-08" iyy="0.064218" iyz="-3.839E-08" izz="0.1164" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0.4 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://amiga_sim/meshes/fr_wheel_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.25 0.25 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.4 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://amiga_sim/meshes/fr_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fr_wheel_joint" type="continuous">
+    <origin xyz="0.91244 0.95447 0.42506" rpy="1.5708 0 1.5708" />
+    <parent link="base_link" />
+    <child link="fr_wheel_link" />
+    <axis xyz="0 0 -1" />
+    <dynamics damping="0.1" friction="1" />
+  </joint>
+  <link name="back_camera_link">
+    <inertial>
+      <origin xyz="6.6589E-05 -0.00019845 0.009929" rpy="0 0 0" />
+      <mass value="0.016241" />
+      <inertia
+        ixx="1.5727E-06"
+        ixy="-3.4747E-10"
+        ixz="9.7453E-09"
+        iyy="9.1694E-06"
+        iyz="9.4633E-09"
+        izz="1.003E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://amiga_sim/meshes/back_camera_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.45 0.45 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amiga_sim/meshes/back_camera_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="back_camera_joint" type="fixed">
+    <origin xyz="0.59464 -0.53003 0.81286" rpy="-3.1416 0 3.1416" />
+    <parent link="base_link" />
+    <child link="back_camera_link" />
+    <axis xyz="0 0 0" />
+  </joint>
+
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so"/>
+  </gazebo>
+  <transmission name="br_wheel_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="br_wheel_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="br_wheel_joint_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="bl_wheel_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="bl_wheel_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="bl_wheel_joint_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="fl_wheel_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fl_wheel_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="fl_wheel_joint_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="fr_wheel_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="fr_wheel_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="fr_wheel_joint_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="br_wheel_link">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+  <gazebo reference="bl_wheel_link">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+  <gazebo reference="fl_wheel_link">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+  <gazebo reference="fr_wheel_link">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+  <gazebo reference="back_camera_link">
+    <material>Gazebo/Grey</material>
+    <sensor type="depth" name="oak_d_w_stereo">
+      <pose>0 0 0.02 1.5708 -1.5708 0</pose>
+      <camera name="stereo">
+        <horizontal_fov>2.23</horizontal_fov> <!-- ~128° HFOV -->
+        <image>
+          <width>1280</width>
+          <height>800</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.37</near> <!-- matches MinZ spec -->
+          <far>6.0</far>    <!-- matches ideal depth range -->
+        </clip>
+      </camera>
+      <plugin name="oak_d_w_depth" filename="libgazebo_ros_depth_camera.so">
+        <always_on>true</always_on>
+        <update_rate>30.0</update_rate>
+        <cameraName>camera_back/oak_depth</cameraName>
+        <frame_name>back_camera_link</frame_name>
+        <depth_image_topic_name>image_raw</depth_image_topic_name>
+        <camera_info_topic_name>camera_info</camera_info_topic_name>
+      </plugin>
+    </sensor>
+    <visualize>true</visualize>
+  </gazebo>
+</robot>

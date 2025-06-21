@@ -1,0 +1,4 @@
+<launch>
+  <param name="robot_description" textfile="$(find amiga_sim)/urdf/amiga_model.urdf" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find amiga_sim)/rviz/display.rviz" />
+</launch>

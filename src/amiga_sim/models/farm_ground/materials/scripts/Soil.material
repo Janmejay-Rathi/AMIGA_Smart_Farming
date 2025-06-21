@@ -1,0 +1,15 @@
+material Soil/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture soil_texture_d.jpg
+        tex_address_mode wrap
+        scale 0.05 0.05
+      }
+    }
+  }
+}
