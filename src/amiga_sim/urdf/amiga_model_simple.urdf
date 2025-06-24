@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<robot name="amiga_sim">
+<robot name="amiga_model">
   <link name="base_link">
     <inertial>
       <origin xyz="0.587273529285794 0.348616943505135 0.78377642743606" rpy="0 0 0" />

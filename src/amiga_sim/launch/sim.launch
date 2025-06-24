@@ -1,16 +1,16 @@
 <launch>
-  <arg name="model" default="$(find amiga_sim)/urdf/amiga_model.urdf" />
+  <arg name="model" default="$(find amiga_sim)/urdf/amiga_model_v1.urdf" />
   <arg name="world_name" default="$(find amiga_sim)/worlds/farm.world"/>
 
   <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
-  <rosparam file="$(find amiga_sim)/config/base_control.yaml" command="load" />
+  <!-- <rosparam file="$(find amiga_sim)/config/base_control.yaml" command="load" />
 
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
         output="screen" args="joint_state_controller 
                               br_wheel_joint_velocity_controller
                               bl_wheel_joint_velocity_controller
                               fl_wheel_joint_velocity_controller
-                              fr_wheel_joint_velocity_controller" />
+                              fr_wheel_joint_velocity_controller" /> -->
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(arg world_name)"/>
@@ -20,15 +20,15 @@
   </include>
 
   <!-- Generate weed model before spawning -->
-  <node pkg="amiga_sim" type="gen_weeds.py" name="weed_generator" output="screen"/>
+  <!-- <node pkg="amiga_sim" type="gen_weeds.py" name="weed_generator" output="screen"/> -->
   <!-- Spawn the generated weed model -->
-  <node pkg="gazebo_ros" type="spawn_model" name="spawn_weeds" output="screen"
-      args="-file $(find amiga_sim)/models/farm_weeds/model.sdf -sdf -model farm_weeds -x 0 -y 0 -z 0" />
+  <!-- <node pkg="gazebo_ros" type="spawn_model" name="spawn_weeds" output="screen"
+      args="-file $(find amiga_sim)/models/farm_weeds/model.sdf -sdf -model farm_weeds -x 0 -y 0 -z 0" /> -->
 
   <!-- Spawn the robot model -->
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" output="screen"
-        args="-param robot_description -urdf -model amiga_sim -x 0.27 -y 0.0 -z 0.0" />
+        args="-param robot_description -urdf -model amiga_model -x 0.27 -y 0.0 -z 0.0" />
 
   <!-- launches rviz -->
-  <include file="$(find amiga_sim)/launch/display.launch" />
+  <!-- <include file="$(find amiga_sim)/launch/display.launch" /> -->
 </launch>
