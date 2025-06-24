@@ -3,9 +3,9 @@
   <arg name="world_name" default="$(find amiga_sim)/worlds/farm.world"/>
 
   <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
-  <!-- <rosparam file="$(find amiga_sim)/config/base_control.yaml" command="load" />
+  <!-- <rosparam file="$(find amiga_sim)/config/base_control.yaml" command="load" /> -->
 
-  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+  <!-- <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
         output="screen" args="joint_state_controller 
                               br_wheel_joint_velocity_controller
                               bl_wheel_joint_velocity_controller
