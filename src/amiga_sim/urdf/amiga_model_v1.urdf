@@ -295,7 +295,7 @@
     name="intelligence_kit_joint"
     type="fixed">
     <origin
-      xyz="0.47409121329226 -0.36658102124713 1.02035935922013"
+      xyz="0.602415 1.34041 1.1702"
       rpy="1.5707963267949 0 3.14159265358979" />
     <parent
       link="base_link" />
@@ -348,7 +348,7 @@
     name="brain_joint"
     type="fixed">
     <origin
-      xyz="0.0438125 -0.0134064575902699 -0.13786349367425"
+      xyz="0.0438125 0.4004575902699 -0.13786349367425"
       rpy="2.44346095279172 0 3.14159265358979" />
     <parent
       link="intelligence_kit_link" />
@@ -401,8 +401,8 @@
     name="poe_switch_joint"
     type="fixed">
     <origin
-      xyz="0.01016 0.15460290397814 0"
-      rpy="1.5707963267949 -1.5707963267949 0" />
+      xyz="0.01016 0.22060290397814 0"
+      rpy="-1.5708 0 0" />
     <parent
       link="intelligence_kit_link" />
     <child
@@ -410,7 +410,62 @@
     <axis
       xyz="0 0 0" />
   </joint>
+
   <link
+    name="oak_d_camera_1_tube_plate_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amiga_sim/meshes/extra_tube_plate_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amiga_sim/meshes/extra_tube_plate_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="oak_d_camera_1_tube_plate_joint"
+    type="fixed">
+    <origin
+      xyz="-0.01 -0.2 0"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="intelligence_kit_link" />
+    <child
+      link="oak_d_camera_1_tube_plate_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <!-- <link
     name="camera_mount_tube_link">
     <inertial>
       <origin
@@ -674,7 +729,7 @@
       link="oak_d_camera_2_link" />
     <axis
       xyz="0 0 0" />
-  </joint>
+  </joint> -->
 
  
   <link
@@ -1166,6 +1221,115 @@
       xyz="0 0 0" />
   </joint>
 
+  <link
+    name="extra_tube_plate_e_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amiga_sim/meshes/extra_tube_plate_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amiga_sim/meshes/extra_tube_plate_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="extra_tube_plate_e_joint"
+    type="fixed">
+    <origin
+      xyz="0.602415 1.31441 0.78102"
+      rpy="1.5708 -1.5708 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="extra_tube_plate_e_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <link
+    name="extra_tube_plate_f_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amiga_sim/meshes/extra_tube_plate_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amiga_sim/meshes/extra_tube_plate_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="extra_tube_plate_f_joint"
+    type="fixed">
+    <origin
+      xyz="0.602415 1.32741 0.78102"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="extra_tube_plate_f_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so"/>
   </gazebo>
@@ -1221,6 +1385,9 @@
   <gazebo reference="fr_wheel_link">
     <material>Gazebo/DarkGrey</material>
   </gazebo>
+  <gazebo reference="intelligence_kit_link">
+    <material>Gazebo/Grey</material>
+  </gazebo>
   <gazebo reference="extra_tube_a_link">
     <material>Gazebo/Grey</material>
   </gazebo>
@@ -1246,6 +1413,15 @@
     <material>Gazebo/Black</material>
   </gazebo>
   <gazebo reference="extra_tube_plate_d_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
+  <gazebo reference="extra_tube_plate_e_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
+  <gazebo reference="extra_tube_plate_f_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
+  <gazebo reference="oak_d_camera_1_tube_plate_link">
     <material>Gazebo/Black</material>
   </gazebo>
   <gazebo reference="oak_d_camera_3_link">
