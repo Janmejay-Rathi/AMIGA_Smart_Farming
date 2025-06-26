@@ -273,7 +273,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://amiga_sim/meshes/intelligence_kit_link.STL" />
+          filename="package://amiga_sim/meshes/intelligence_kit_link.STL" scale="1 0.91 1"/>
       </geometry>
       <material
         name="">
@@ -287,7 +287,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://amiga_sim/meshes/intelligence_kit_link.STL" />
+          filename="package://amiga_sim/meshes/intelligence_kit_link.STL" scale="1 0.91 1"/>
       </geometry>
     </collision>
   </link>
@@ -331,7 +331,7 @@
       <material
         name="">
         <color
-          rgba="0.674509803921569 0.709803921568627 0.737254901960784 1" />
+          rgba="0.674509803921569 0.709803921568627 0.737254901960784 1" scale="1 0.95 1"/>
       </material>
     </visual>
     <collision>
@@ -348,7 +348,7 @@
     name="brain_joint"
     type="fixed">
     <origin
-      xyz="0.0438125 0.4004575902699 -0.13786349367425"
+      xyz="0.0438125 0.3404575902699 -0.13786349367425"
       rpy="2.44346095279172 0 3.14159265358979" />
     <parent
       link="intelligence_kit_link" />
@@ -401,7 +401,7 @@
     name="poe_switch_joint"
     type="fixed">
     <origin
-      xyz="0.01016 0.22060290397814 0"
+      xyz="0.01016 0.17060290397814 0"
       rpy="-1.5708 0 0" />
     <parent
       link="intelligence_kit_link" />
@@ -704,7 +704,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://amiga_sim/meshes/long_extra_tube_link.STL" scale="1 0.85 1" />
+          filename="package://amiga_sim/meshes/long_extra_tube_link.STL" scale="1 0.85 1"/>
       </geometry>
       <material
         name="">
@@ -718,7 +718,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://amiga_sim/meshes/long_extra_tube_link.STL" scale="1 0.85 1" />
+          filename="package://amiga_sim/meshes/long_extra_tube_link.STL" scale="1 0.85 1"/>
       </geometry>
     </collision>
   </link>
