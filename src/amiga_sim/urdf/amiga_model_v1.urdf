@@ -273,7 +273,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://amiga_sim/meshes/intelligence_kit_link.STL" scale="1 0.91 1"/>
+          filename="package://amiga_sim/meshes/intelligence_kit_link.STL" scale="1 0.87 1"/>
       </geometry>
       <material
         name="">
@@ -287,7 +287,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://amiga_sim/meshes/intelligence_kit_link.STL" scale="1 0.91 1"/>
+          filename="package://amiga_sim/meshes/intelligence_kit_link.STL" scale="1 0.87 1"/>
       </geometry>
     </collision>
   </link>
@@ -295,7 +295,7 @@
     name="intelligence_kit_joint"
     type="fixed">
     <origin
-      xyz="0.602415 1.34041 1.1702"
+      xyz="0.602415 1.34041 1.1402"
       rpy="1.5707963267949 0 3.14159265358979" />
     <parent
       link="base_link" />
@@ -618,7 +618,7 @@
     name="horizontal_module_tube_plate_a_joint"
     type="fixed">
     <origin
-      xyz="0.01 -0.07 0"
+      xyz="0.01 -0.078 0"
       rpy="-1.5708 1.5708 0" />
     <parent
       link="intelligence_kit_link" />
