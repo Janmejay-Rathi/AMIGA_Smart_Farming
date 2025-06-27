@@ -573,7 +573,7 @@
       xyz="0 0 0" />
   </joint>
 
-  <!-- Downward frame -->
+  <!-- Horizontal module -->
   <link
     name="horizontal_module_tube_plate_a_link">
     <inertial>
@@ -950,6 +950,71 @@
       link="oak_d_camera_1_link" />
     <axis
       xyz="0 0 0" />
+  </joint>
+
+  <!-- Logo link -->
+  <link name="i_logo_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0" />
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://amiga_sim/meshes/i_logo_link.STL" scale="0.4 0.4 0.4"/>
+      </geometry>
+      <material name="">
+        <color rgba="1 0.6 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://amiga_sim/meshes/i_logo_link.STL" scale="0.4 0.4 0.4"/>
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint name="i_logo_joint" type="fixed">
+    <origin 
+    xyz="1.043 0.95447 0.62506" 
+    rpy="0 0 1.5708" />
+    <parent link="base_link" />
+    <child link="i_logo_link" />
+    <axis xyz="0 0 0" />
+  </joint>
+
+  <link name="i_logo_outer_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0" />
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://amiga_sim/meshes/i_logo_outer_link.STL" scale="0.4 0.4 0.4"/>
+      </geometry>
+      <material name="">
+        <color rgba="1 0.6 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://amiga_sim/meshes/i_logo_outer_link.STL" scale="0.4 0.4 0.4"/>
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint name="i_logo_outer_joint" type="fixed">
+    <origin 
+    xyz="1.043 0.95447 0.62506" 
+    rpy="0 0 1.5708" />
+    <parent link="base_link" />
+    <child link="i_logo_outer_link" />
+    <axis xyz="0 0 0" />
   </joint>
   
   <!-- All extra metal frames for the current config -->
@@ -1662,6 +1727,12 @@
     <material>Gazebo/Black</material>
   </gazebo>
   <gazebo reference="oak_d_camera_1_mount_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
+  <gazebo reference="i_logo_link">
+    <material>Gazebo/Orange</material>
+  </gazebo>
+  <gazebo reference="i_logo_outer_link">
     <material>Gazebo/Black</material>
   </gazebo>
   
