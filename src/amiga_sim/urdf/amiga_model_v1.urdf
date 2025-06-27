@@ -791,7 +791,61 @@
   </joint>
 
   <link
-    name="oak_d_camera_1_sub_mount_link">
+    name="oak_d_camera_1_base_mount_link">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 0.00102036347592804 -0.00238125"
+        rpy="0 0 0" />
+      <mass
+        value="0.026503699588838" />
+      <inertia
+        ixx="7.89211151485262E-06"
+        ixy="4.56939967660619E-22"
+        ixz="-2.61184553160301E-23"
+        iyy="2.15789914817406E-05"
+        iyz="-1.32501491860226E-23"
+        izz="2.93709128003428E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amiga_sim/meshes/lower_mount_plate_link.STL" scale="1.12 1 1"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.674509803921569 0.709803921568627 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amiga_sim/meshes/lower_mount_plate_link.STL" scale="1.12 1 1"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="oak_d_camera_1_base_mount_joint"
+    type="fixed">
+    <origin
+      xyz="0 -0.01 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="oak_d_camera_1_tube_plate_link" />
+    <child
+      link="oak_d_camera_1_base_mount_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <link
+    name="oak_d_camera_1_mount_link">
     <inertial>
       <origin
         xyz="-5.55111512312578E-17 0.00102036347592804 -0.00238125"
@@ -831,19 +885,18 @@
     </collision>
   </link>
   <joint
-    name="oak_d_camera_1_sub_mount_joint"
+    name="oak_d_camera_1_mount_joint"
     type="fixed">
     <origin
-      xyz="0 -0.01 0"
-      rpy="1.5708 -1.5708 0" />
+      xyz="0 -0.023 0.06"
+      rpy="-1.5708 1.5708 0" />
     <parent
-      link="oak_d_camera_1_tube_plate_link" />
+      link="oak_d_camera_1_base_mount_link" />
     <child
-      link="oak_d_camera_1_sub_mount_link" />
+      link="oak_d_camera_1_mount_link" />
     <axis
       xyz="0 0 0" />
   </joint>
-
   
   <!-- All extra metal frames for the current config -->
   <link
@@ -1551,7 +1604,10 @@
   <gazebo reference="oak_d_camera_1_tube_plate_link">
     <material>Gazebo/Black</material>
   </gazebo>
-  <gazebo reference="oak_d_camera_1_sub_mount_link">
+  <gazebo reference="oak_d_camera_1_base_mount_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
+  <gazebo reference="oak_d_camera_1_mount_link">
     <material>Gazebo/Black</material>
   </gazebo>
   
