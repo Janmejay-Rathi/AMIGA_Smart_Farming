@@ -897,6 +897,60 @@
     <axis
       xyz="0 0 0" />
   </joint>
+
+   <link
+    name="oak_d_camera_1_link">
+    <inertial>
+      <origin
+        xyz="0.0440125838386611 -0.0154385599692526 -0.00320815062605667"
+        rpy="0 0 0" />
+      <mass
+        value="0.0415063479146466" />
+      <inertia
+        ixx="8.01589011978823E-06"
+        ixy="6.8775481314556E-09"
+        ixz="2.18364044470342E-07"
+        iyy="5.13711230877534E-05"
+        iyz="3.59849063517962E-07"
+        izz="5.66107008011619E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amiga_sim/meshes/oak_d_camera_1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amiga_sim/meshes/oak_d_camera_1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="oak_d_camera_1_joint"
+    type="fixed">
+    <origin
+      xyz="0.055 -0.045 -0.02"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="oak_d_camera_1_mount_link" />
+    <child
+      link="oak_d_camera_1_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
   
   <!-- All extra metal frames for the current config -->
   <link
