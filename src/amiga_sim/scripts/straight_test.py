@@ -15,5 +15,5 @@ pubs = {
 rate = rospy.Rate(10)
 while not rospy.is_shutdown():
     for pub in pubs.values():
-        pub.publish(5.0)  # rad/s velocity
+        pub.publish(2.0)  # rad/s velocity
     rate.sleep()

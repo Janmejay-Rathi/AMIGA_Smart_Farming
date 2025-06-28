@@ -1658,15 +1658,83 @@
     </actuator>
   </transmission>
   <gazebo reference="br_wheel_link">
+    <collision>
+      <surface>
+        <friction>
+          <ode>
+            <mu>2.0</mu>
+            <mu2>2.0</mu2>
+          </ode>
+        </friction>
+        <bounce/>
+        <contact>
+          <ode>
+            <kp>600000.0</kp>
+            <kd>1.0</kd>
+          </ode>
+        </contact>
+      </surface>
+    </collision>
     <material>Gazebo/DarkGrey</material>
   </gazebo>
   <gazebo reference="bl_wheel_link">
+    <collision>
+      <surface>
+        <friction>
+          <ode>
+            <mu>2.0</mu>
+            <mu2>2.0</mu2>
+          </ode>
+        </friction>
+        <bounce/>
+        <contact>
+          <ode>
+            <kp>600000.0</kp>
+            <kd>1.0</kd>
+          </ode>
+        </contact>
+      </surface>
+    </collision>
     <material>Gazebo/DarkGrey</material>
   </gazebo>
   <gazebo reference="fl_wheel_link">
+    <collision>
+      <surface>
+        <friction>
+          <ode>
+            <mu>2.0</mu>
+            <mu2>2.0</mu2>
+          </ode>
+        </friction>
+        <bounce/>
+        <contact>
+          <ode>
+            <kp>600000.0</kp>
+            <kd>1.0</kd>
+          </ode>
+        </contact>
+      </surface>
+    </collision>
     <material>Gazebo/DarkGrey</material>
   </gazebo>
   <gazebo reference="fr_wheel_link">
+    <collision>
+      <surface>
+        <friction>
+          <ode>
+            <mu>2.0</mu>
+            <mu2>2.0</mu2>
+          </ode>
+        </friction>
+        <bounce/>
+        <contact>
+          <ode>
+            <kp>600000.0</kp>
+            <kd>1.0</kd>
+          </ode>
+        </contact>
+      </surface>
+    </collision>
     <material>Gazebo/DarkGrey</material>
   </gazebo>
   <gazebo reference="intelligence_kit_link">
