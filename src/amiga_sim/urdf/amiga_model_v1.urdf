@@ -1804,6 +1804,64 @@
     <material>Gazebo/Black</material>
   </gazebo>
   
+  <gazebo reference="oak_d_camera_1_link">
+    <material>Gazebo/White</material>
+    <sensor type="depth" name="oak_d_w_stereo">
+      <pose>0 0 0.02 -1.5708 -1.5708 0</pose>
+      <camera name="stereo">
+        <horizontal_fov>2.23</horizontal_fov> <!-- ~128° HFOV -->
+        <image>
+          <width>1280</width>
+          <height>800</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.37</near> <!-- matches MinZ spec -->
+          <far>6.0</far>    <!-- matches ideal depth range -->
+        </clip>
+      </camera>
+      <plugin name="oak_d_w_depth" filename="libgazebo_ros_depth_camera.so">
+        <always_on>true</always_on>
+        <update_rate>30.0</update_rate>
+        <cameraName>oak_d_camera_1</cameraName>
+        <frameName>oak_d_camera_1_link</frameName>
+        <depth_image_topic_name>image_raw</depth_image_topic_name>
+        <camera_info_topic_name>camera_info</camera_info_topic_name>
+        <point_cloud_topic_name>points</point_cloud_topic_name>
+      </plugin>
+    </sensor>
+    <visualize>true</visualize>
+  </gazebo>
+
+  <gazebo reference="oak_d_camera_2_link">
+    <material>Gazebo/White</material>
+    <sensor type="depth" name="oak_d_w_stereo">
+      <pose>0 0 0 -1.5708 -1.5708 0</pose>
+      <camera name="stereo">
+        <horizontal_fov>2.23</horizontal_fov> <!-- ~128° HFOV -->
+        <image>
+          <width>1280</width>
+          <height>800</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.37</near> <!-- matches MinZ spec -->
+          <far>6.0</far>    <!-- matches ideal depth range -->
+        </clip>
+      </camera>
+      <plugin name="oak_d_w_depth" filename="libgazebo_ros_depth_camera.so">
+        <always_on>true</always_on>
+        <update_rate>30.0</update_rate>
+        <cameraName>oak_d_camera_2</cameraName>
+        <frameName>oak_d_camera_2_link</frameName>
+        <depth_image_topic_name>image_raw</depth_image_topic_name>
+        <camera_info_topic_name>camera_info</camera_info_topic_name>
+        <point_cloud_topic_name>points</point_cloud_topic_name>
+      </plugin>
+    </sensor>
+    <visualize>true</visualize>
+  </gazebo>
+
   <gazebo reference="oak_d_camera_3_link">
     <material>Gazebo/Grey</material>
     <sensor type="depth" name="oak_d_w_stereo">
@@ -1823,10 +1881,11 @@
       <plugin name="oak_d_w_depth" filename="libgazebo_ros_depth_camera.so">
         <always_on>true</always_on>
         <update_rate>30.0</update_rate>
-        <cameraName>camera_back/oak_depth</cameraName>
-        <frame_name>oak_d_camera_3_link</frame_name>
+        <cameraName>oak_d_camera_3</cameraName>
+        <frameName>oak_d_camera_3_link</frameName>
         <depth_image_topic_name>image_raw</depth_image_topic_name>
         <camera_info_topic_name>camera_info</camera_info_topic_name>
+        <point_cloud_topic_name>points</point_cloud_topic_name>
       </plugin>
     </sensor>
     <visualize>true</visualize>

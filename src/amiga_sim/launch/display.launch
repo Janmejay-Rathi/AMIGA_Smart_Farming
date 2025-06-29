@@ -1,4 +1,7 @@
 <launch>
   <param name="robot_description" textfile="$(find amiga_sim)/urdf/amiga_model_v1.urdf" />
+  <node pkg="tf" type="static_transform_publisher" name="oak_d_camera_1_to_map" args="0 0 0 0 0 0 map oak_d_camera_1_link 100" />
+  <node pkg="tf" type="static_transform_publisher" name="oak_d_camera_2_to_map" args="0 0 0 0 0 0 map oak_d_camera_2_link 100" />
+  <node pkg="tf" type="static_transform_publisher" name="oak_d_camera_3_to_map" args="0 0 0 0 0 0 map oak_d_camera_3_link 100" />
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find amiga_sim)/rviz/display.rviz" />
 </launch>
