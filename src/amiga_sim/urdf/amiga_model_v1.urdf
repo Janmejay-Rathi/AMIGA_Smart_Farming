@@ -1807,7 +1807,7 @@
   <gazebo reference="oak_d_camera_1_link">
     <material>Gazebo/White</material>
     <sensor type="depth" name="oak_d_w_stereo">
-      <pose>0 0 0.02 -1.5708 -1.5708 0</pose>
+      <pose>0 0 0 -1.5708 -1.5708 0</pose>
       <camera name="stereo">
         <horizontal_fov>2.23</horizontal_fov> <!-- ~128° HFOV -->
         <image>
