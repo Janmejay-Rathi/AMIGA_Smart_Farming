@@ -1,19 +1,22 @@
 #!/usr/bin/env python
 
 import rospy
-from std_msgs.msg import Float64
+from geometry_msgs.msg import TwistStamped
 
-rospy.init_node('wheel_commander')
+def main():
+    rospy.init_node('straight_cmd_vel_publisher')
+    pub = rospy.Publisher('/amiga/cmd_vel', TwistStamped, queue_size=10)
+    rate = rospy.Rate(10)  # 10 Hz
 
-pubs = {
-    "lf": rospy.Publisher('/br_wheel_joint_velocity_controller/command', Float64, queue_size=1),
-    "rf": rospy.Publisher('/bl_wheel_joint_velocity_controller/command', Float64, queue_size=1),
-    "lr": rospy.Publisher('/fl_wheel_joint_velocity_controller/command', Float64, queue_size=1),
-    "rr": rospy.Publisher('/fr_wheel_joint_velocity_controller/command', Float64, queue_size=1),
-}
+    while not rospy.is_shutdown():
+        msg = TwistStamped()
+        msg.header.stamp = rospy.Time.now()
+        msg.header.frame_id = "robot"
+        msg.twist.linear.x = 0.2   # Forward speed in m/s
+        msg.twist.angular.z = 0.0  # No rotation (straight)
 
-rate = rospy.Rate(10)
-while not rospy.is_shutdown():
-    for pub in pubs.values():
-        pub.publish(2.0)  # rad/s velocity
-    rate.sleep()
+        pub.publish(msg)
+        rate.sleep()
+
+if __name__ == '__main__':
+    main()
