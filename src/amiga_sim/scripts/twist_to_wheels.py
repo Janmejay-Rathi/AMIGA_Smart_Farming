@@ -92,7 +92,7 @@ class TwistToWheelController:
             elif diff < -0.01:
                 output_lines.append("🔁 Actual motion: TURNING RIGHT")
             else:
-                output_lines.append("⬆️ Actual motion: DRIVING STRAIGHT")
+                output_lines.append("⬆️  Actual motion: DRIVING STRAIGHT")
 
             fl_fr_diff = actual_velocities['fl_wheel_joint'] - actual_velocities['fr_wheel_joint']
             bl_br_diff = actual_velocities['bl_wheel_joint'] - actual_velocities['br_wheel_joint']
