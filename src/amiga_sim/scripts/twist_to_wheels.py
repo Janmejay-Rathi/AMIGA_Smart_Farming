@@ -43,7 +43,7 @@ class TwistToWheelController:
 
     def cmd_callback(self, msg):
         linear_vel = msg.twist.linear.x
-        angular_vel = msg.twist.angular.z
+        angular_vel = msg.twist.angular.z * 35
 
         self.latest_linear_x = linear_vel
         self.latest_angular_z = angular_vel
@@ -68,12 +68,11 @@ class TwistToWheelController:
         name_to_index = {name: i for i, name in enumerate(msg.name)}
         output_lines = []
 
-        # Log header with input command
+        # Log command input
         output_lines.append(f"Subscribed linear.x: {self.latest_linear_x:.3f}, angular.z: {self.latest_angular_z:.3f}\n")
 
         actual_velocities = {}
 
-        # Compare command vs actual
         for joint, commanded in self.commanded_velocities.items():
             if joint in name_to_index:
                 actual = msg.velocity[name_to_index[joint]]
@@ -81,14 +80,25 @@ class TwistToWheelController:
                 error = abs(commanded - actual)
                 output_lines.append(f"{joint} -> Commanded: {commanded:.3f}, Actual: {actual:.3f}, |Error|: {error:.3f}")
 
-        # Add turn indicators if all values are present
+        # Determine turning direction based on actual wheel velocities
         if all(j in actual_velocities for j in ['fl_wheel_joint', 'fr_wheel_joint', 'bl_wheel_joint', 'br_wheel_joint']):
-            fl_fr_diff = abs(actual_velocities['fl_wheel_joint'] - actual_velocities['fr_wheel_joint'])
-            bl_br_diff = abs(actual_velocities['bl_wheel_joint'] - actual_velocities['br_wheel_joint'])
+            left_avg = (actual_velocities['fl_wheel_joint'] + actual_velocities['bl_wheel_joint']) / 2.0
+            right_avg = (actual_velocities['fr_wheel_joint'] + actual_velocities['br_wheel_joint']) / 2.0
+            diff = left_avg - right_avg
 
             output_lines.append("")
-            output_lines.append(f"|fl - fr| = {fl_fr_diff:.3f}   (Front left vs right)")
-            output_lines.append(f"|bl - br| = {bl_br_diff:.3f}   (Back left vs right)")
+            if diff > 0.01:
+                output_lines.append("🔄 Actual motion: TURNING LEFT")
+            elif diff < -0.01:
+                output_lines.append("🔁 Actual motion: TURNING RIGHT")
+            else:
+                output_lines.append("⬆️  Actual motion: DRIVING STRAIGHT")
+
+            fl_fr_diff = actual_velocities['fl_wheel_joint'] - actual_velocities['fr_wheel_joint']
+            bl_br_diff = actual_velocities['bl_wheel_joint'] - actual_velocities['br_wheel_joint']
+
+            output_lines.append(f"fl - fr = {fl_fr_diff:.3f}   (Front left vs right)")
+            output_lines.append(f"bl - br = {bl_br_diff:.3f}   (Back left vs right)")
 
         rospy.loginfo("\n" + "\n".join(output_lines) + "\n" + "-" * 50)
 
