@@ -15,7 +15,7 @@ def main():
     }
 
     # Define turning speed (rad/s)
-    turning_speed = 7.0
+    turning_speed = 1.0
 
     rate = rospy.Rate(10)
     while not rospy.is_shutdown():

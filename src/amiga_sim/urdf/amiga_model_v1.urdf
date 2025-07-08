@@ -8,7 +8,7 @@
   <link name="base_link">
     <inertial>
       <origin xyz="0.587273529285794 0.348616943505135 0.78377642743606" rpy="0 0 0" />
-      <mass value="86.4440274940804" />
+      <mass value="16.4440274940804" />
       <inertia ixx="14.1409037526016" ixy="0.00100506323760924" ixz="0.000100431046158627" iyy="5.14210683138064" iyz="-0.00184999725161878" izz="18.8095118788223" />
     </inertial>
     <visual>
@@ -1662,8 +1662,8 @@
       <surface>
         <friction>
           <ode>
-            <mu>2.0</mu>
-            <mu2>2.0</mu2>
+            <mu>20.0</mu>
+            <mu2>20.0</mu2>
           </ode>
         </friction>
         <bounce/>
@@ -1682,8 +1682,8 @@
       <surface>
         <friction>
           <ode>
-            <mu>2.0</mu>
-            <mu2>2.0</mu2>
+            <mu>20.0</mu>
+            <mu2>20.0</mu2>
           </ode>
         </friction>
         <bounce/>
@@ -1702,8 +1702,8 @@
       <surface>
         <friction>
           <ode>
-            <mu>2.0</mu>
-            <mu2>2.0</mu2>
+            <mu>20.0</mu>
+            <mu2>20.0</mu2>
           </ode>
         </friction>
         <bounce/>
@@ -1722,8 +1722,8 @@
       <surface>
         <friction>
           <ode>
-            <mu>2.0</mu>
-            <mu2>2.0</mu2>
+            <mu>20.0</mu>
+            <mu2>20.0</mu2>
           </ode>
         </friction>
         <bounce/>

@@ -43,7 +43,7 @@ class TwistToWheelController:
 
     def cmd_callback(self, msg):
         linear_vel = msg.twist.linear.x
-        angular_vel = msg.twist.angular.z * 35
+        angular_vel = msg.twist.angular.z * 20
 
         self.latest_linear_x = linear_vel
         self.latest_angular_z = angular_vel
