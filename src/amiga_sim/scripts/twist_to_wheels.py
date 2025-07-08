@@ -61,7 +61,7 @@ class TwistToWheelController:
 
         self.latest_linear_x = linear_vel
         self.latest_angular_z = angular_vel
-        self.boosted_angular_z = angular_vel * 10
+        self.boosted_angular_z = angular_vel * 20
 
         # Differential drive kinematics
         v_left = (linear_vel - self.boosted_angular_z * self.L / 2.0) / self.R
@@ -117,7 +117,7 @@ class TwistToWheelController:
 
         output_lines.append("")
 
-        epsilon = 1e-6  # to prevent division by zero or small denominators
+        epsilon = 1e-3  # to prevent division by zero or small denominators
 
         lin_err = abs(self.latest_gazebo_linear - self.latest_linear_x)
         ang_err = abs(self.latest_gazebo_angular - self.latest_angular_z)
@@ -126,7 +126,7 @@ class TwistToWheelController:
         ang_pct = 0.0 if abs(self.latest_angular_z) < epsilon and abs(self.latest_gazebo_angular) < epsilon else 100.0 * ang_err / (abs(self.latest_angular_z) + epsilon)
 
         output_lines.append(f"Gazebo actual linear.x: {self.latest_gazebo_linear:.3f} vs Target: {self.latest_linear_x:.3f}   | Error: {lin_err:.3f} ({lin_pct:.1f}%)")
-        output_lines.append(f"Gazebo actual angular.z: {self.latest_gazebo_angular:.3f} vs Target: {self.latest_angular_z:.3f} vs Commanded: {self.boosted_angular_z:.3f}    | Error: {ang_err:.3f} ({ang_pct:.1f}%)")
+        output_lines.append(f"Gazebo actual angular.z: {self.latest_gazebo_angular:.3f} vs Target: {self.latest_angular_z:.3f} vs Commanded: {self.boosted_angular_z:.3f}   | Error: {ang_err:.3f} ({ang_pct:.1f}%)")
 
         rospy.loginfo("\n" + "\n".join(output_lines) + "\n" + "-" * 50)
 

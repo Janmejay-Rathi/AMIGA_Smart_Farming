@@ -9,7 +9,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.492 0.492 0.492</scale>
+            <scale>0.361 0.361 0.361</scale>
           </mesh>
         </geometry>
         <material>
@@ -20,12 +20,12 @@
     </link>
     
     <link name="weed_weed_1">
-      <pose>-0.01 0.718 0 0 0 0</pose>
+      <pose>0.0 0.56 0 0 0 0</pose>
       <visual name="visual">
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.285 0.285 0.285</scale>
+            <scale>0.299 0.299 0.299</scale>
           </mesh>
         </geometry>
         <material>
@@ -36,1223 +36,7 @@
     </link>
     
     <link name="weed_weed_2">
-      <pose>-0.041 1.435 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.502 0.502 0.502</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_3">
-      <pose>-0.093 2.151 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.64 0.64 0.64</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_4">
-      <pose>-0.165 2.866 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.451 0.451 0.451</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_5">
-      <pose>-0.257 3.578 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.237 0.237 0.237</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_6">
-      <pose>-0.37 4.287 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.334 0.334 0.334</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_7">
-      <pose>-0.504 4.992 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.275 0.275 0.275</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_8">
-      <pose>-0.657 5.694 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.262 0.262 0.262</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_9">
-      <pose>-0.831 6.39 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.511 0.511 0.511</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_10">
-      <pose>-1.024 7.082 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.24 0.24 0.24</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_11">
-      <pose>-1.237 7.767 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.508 0.508 0.508</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_12">
-      <pose>-1.47 8.447 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.658 0.658 0.658</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_13">
-      <pose>-1.722 9.119 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.624 0.624 0.624</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_14">
-      <pose>-1.994 9.784 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.436 0.436 0.436</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_15">
-      <pose>-2.284 10.44 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.553 0.553 0.553</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_16">
-      <pose>-2.593 11.088 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.602 0.602 0.602</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_17">
-      <pose>-2.921 11.727 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.205 0.205 0.205</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_18">
-      <pose>-3.267 12.356 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.52 0.52 0.52</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_19">
-      <pose>-3.631 12.975 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.341 0.341 0.341</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_20">
-      <pose>-4.012 13.584 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.498 0.498 0.498</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_21">
-      <pose>-4.411 14.181 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.408 0.408 0.408</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_22">
-      <pose>-4.827 14.766 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.407 0.407 0.407</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_23">
-      <pose>-5.259 15.339 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.528 0.528 0.528</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_24">
-      <pose>-5.708 15.9 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.324 0.324 0.324</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_25">
-      <pose>-6.172 16.447 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.398 0.398 0.398</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_26">
-      <pose>-6.652 16.981 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.598 0.598 0.598</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_27">
-      <pose>-7.147 17.501 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.235 0.235 0.235</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_28">
-      <pose>-7.657 18.006 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.264 0.264 0.264</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_29">
-      <pose>-8.182 18.497 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.334 0.334 0.334</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_30">
-      <pose>-8.72 18.972 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.248 0.248 0.248</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_31">
-      <pose>-9.271 19.432 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.275 0.275 0.275</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_32">
-      <pose>-9.836 19.876 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.482 0.482 0.482</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_33">
-      <pose>-10.413 20.303 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.647 0.647 0.647</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_34">
-      <pose>-11.002 20.714 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.514 0.514 0.514</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_35">
-      <pose>-11.602 21.107 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.319 0.319 0.319</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_36">
-      <pose>-12.214 21.483 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.682 0.682 0.682</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_37">
-      <pose>-12.836 21.841 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.366 0.366 0.366</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_38">
-      <pose>-13.469 22.182 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.527 0.527 0.527</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_39">
-      <pose>-14.11 22.504 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.39 0.39 0.39</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_40">
-      <pose>-14.761 22.807 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.612 0.612 0.612</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_41">
-      <pose>-15.42 23.092 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.596 0.596 0.596</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_42">
-      <pose>-16.087 23.357 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.603 0.603 0.603</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_43">
-      <pose>-16.762 23.604 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.37 0.37 0.37</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_44">
-      <pose>-17.443 23.83 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.684 0.684 0.684</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_45">
-      <pose>-18.13 24.038 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.679 0.679 0.679</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_46">
-      <pose>-18.823 24.225 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.69 0.69 0.69</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_47">
-      <pose>-19.522 24.392 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.499 0.499 0.499</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_48">
-      <pose>-20.224 24.54 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.576 0.576 0.576</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_49">
-      <pose>-20.931 24.667 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.504 0.504 0.504</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_50">
-      <pose>-21.641 24.773 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.297 0.297 0.297</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_51">
-      <pose>-22.354 24.86 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.63 0.63 0.63</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_52">
-      <pose>-23.069 24.925 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.422 0.422 0.422</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_53">
-      <pose>-23.785 24.97 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.561 0.561 0.561</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_54">
-      <pose>-24.503 24.995 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.286 0.286 0.286</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_55">
-      <pose>-25.221 24.999 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.683 0.683 0.683</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_56">
-      <pose>-25.939 24.982 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.352 0.352 0.352</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_57">
-      <pose>-26.656 24.945 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.379 0.379 0.379</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_58">
-      <pose>-27.371 24.887 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.592 0.592 0.592</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_59">
-      <pose>-28.085 24.809 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.357 0.357 0.357</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_60">
-      <pose>-28.796 24.71 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.619 0.619 0.619</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_61">
-      <pose>-29.504 24.591 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.447 0.447 0.447</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_62">
-      <pose>-30.209 24.451 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.245 0.245 0.245</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_63">
-      <pose>-30.909 24.292 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.332 0.332 0.332</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_64">
-      <pose>-31.604 24.112 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.665 0.665 0.665</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_65">
-      <pose>-32.293 23.912 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.386 0.386 0.386</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_66">
-      <pose>-32.977 23.693 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.555 0.555 0.555</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_67">
-      <pose>-33.654 23.454 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.427 0.427 0.427</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_68">
-      <pose>-34.324 23.196 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.203 0.203 0.203</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_69">
-      <pose>-34.986 22.919 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.473 0.473 0.473</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_70">
-      <pose>-35.64 22.623 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.345 0.345 0.345</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_71">
-      <pose>-36.286 22.308 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.493 0.493 0.493</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_72">
-      <pose>-36.922 21.974 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.672 0.672 0.672</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_73">
-      <pose>-37.548 21.623 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.262 0.262 0.262</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_74">
-      <pose>-38.164 21.254 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.617 0.617 0.617</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_75">
-      <pose>-38.768 20.867 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.665 0.665 0.665</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_76">
-      <pose>-39.362 20.463 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.223 0.223 0.223</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_77">
-      <pose>-39.944 20.042 0 0 0 0</pose>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.286 0.286 0.286</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <ambient>0.1 0.5 0.1 1</ambient>
-          <diffuse>0.1 0.6 0.1 1</diffuse>
-        </material>
-      </visual>
-    </link>
-    
-    <link name="weed_weed_78">
-      <pose>-40.513 19.605 0 0 0 0</pose>
+      <pose>0.0 1.12 0 0 0 0</pose>
       <visual name="visual">
         <geometry>
           <mesh>
@@ -1267,13 +51,589 @@
       </visual>
     </link>
     
-    <link name="weed_weed_79">
-      <pose>-41.07 19.151 0 0 0 0</pose>
+    <link name="weed_weed_3">
+      <pose>0.0 1.68 0 0 0 0</pose>
       <visual name="visual">
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.473 0.473 0.473</scale>
+            <scale>0.203 0.203 0.203</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_4">
+      <pose>0.0 2.24 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.299 0.299 0.299</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_5">
+      <pose>0.0 2.8 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.612 0.612 0.612</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_6">
+      <pose>0.0 3.36 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.436 0.436 0.436</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_7">
+      <pose>0.0 3.92 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.219 0.219 0.219</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_8">
+      <pose>0.0 4.48 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.687 0.687 0.687</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_9">
+      <pose>0.0 5.04 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.365 0.365 0.365</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_10">
+      <pose>0.0 5.6 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.263 0.263 0.263</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_11">
+      <pose>0.0 6.16 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.581 0.581 0.581</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_12">
+      <pose>0.0 6.72 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.203 0.203 0.203</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_13">
+      <pose>0.0 7.28 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.525 0.525 0.525</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_14">
+      <pose>0.0 7.84 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.687 0.687 0.687</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_15">
+      <pose>0.0 8.4 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.48 0.48 0.48</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_16">
+      <pose>0.0 8.96 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.628 0.628 0.628</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_17">
+      <pose>0.0 9.52 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.7 0.7 0.7</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_18">
+      <pose>0.0 10.08 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.557 0.557 0.557</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_19">
+      <pose>0.0 10.64 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.434 0.434 0.434</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_20">
+      <pose>0.0 11.2 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.205 0.205 0.205</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_21">
+      <pose>0.0 11.76 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.637 0.637 0.637</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_22">
+      <pose>0.0 12.32 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.417 0.417 0.417</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_23">
+      <pose>0.0 12.88 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.5 0.5 0.5</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_24">
+      <pose>0.0 13.44 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.602 0.602 0.602</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_25">
+      <pose>0.0 14.0 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.564 0.564 0.564</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_26">
+      <pose>0.0 14.56 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.388 0.388 0.388</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_27">
+      <pose>0.0 15.12 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.327 0.327 0.327</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_28">
+      <pose>0.0 15.68 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.292 0.292 0.292</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_29">
+      <pose>0.0 16.24 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.532 0.532 0.532</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_30">
+      <pose>0.0 16.8 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.564 0.564 0.564</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_31">
+      <pose>0.0 17.36 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.239 0.239 0.239</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_32">
+      <pose>0.0 17.92 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.571 0.571 0.571</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_33">
+      <pose>0.0 18.48 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.559 0.559 0.559</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_34">
+      <pose>0.0 19.04 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.554 0.554 0.554</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_35">
+      <pose>0.0 19.6 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.315 0.315 0.315</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_36">
+      <pose>0.0 20.16 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.346 0.346 0.346</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_37">
+      <pose>0.0 20.72 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.268 0.268 0.268</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_38">
+      <pose>0.0 21.28 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.407 0.407 0.407</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1 0.5 0.1 1</ambient>
+          <diffuse>0.1 0.6 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="weed_weed_39">
+      <pose>0.0 21.84 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://weed/meshes/weed.dae</uri>
+            <scale>0.401 0.401 0.401</scale>
           </mesh>
         </geometry>
         <material>
