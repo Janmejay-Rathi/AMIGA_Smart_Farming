@@ -88,9 +88,9 @@ class TwistToWheelController:
 
             output_lines.append("")
             if diff > 0.01:
-                output_lines.append("🔄 Actual motion: TURNING LEFT")
-            elif diff < -0.01:
                 output_lines.append("🔁 Actual motion: TURNING RIGHT")
+            elif diff < -0.01:
+                output_lines.append("🔄 Actual motion: TURNING LEFT")
             else:
                 output_lines.append("⬆️  Actual motion: DRIVING STRAIGHT")
 
