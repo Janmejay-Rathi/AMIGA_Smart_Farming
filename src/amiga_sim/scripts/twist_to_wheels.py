@@ -14,8 +14,8 @@ class TwistToWheelController:
         rospy.init_node('twist_to_wheels')
 
         # Robot physical parameters
-        wheel_radius = 0.3   # meters
-        wheel_base = 1.0     # meters (distance between left and right wheels)
+        wheel_radius = 0.216   # meters
+        wheel_base = 0.81     # meters (distance between left and right wheels)
 
         self.L = wheel_base
         self.R = wheel_radius
