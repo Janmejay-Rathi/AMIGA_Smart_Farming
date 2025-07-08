@@ -34,7 +34,7 @@
       <inertia ixx="0.064219" ixy="9.3894E-07" ixz="-6.5889E-08" iyy="0.064218" iyz="-3.839E-08" izz="0.1164" />
     </inertial>
     <visual>
-      <origin xyz="0 0.4 0" rpy="0 0 0" />
+      <origin xyz="0 0.3959 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://amiga_sim/meshes/br_wheel_link.STL" />
       </geometry>
@@ -43,14 +43,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0.4 0" rpy="0 0 0" />
+      <origin xyz="0 0.3959 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://amiga_sim/meshes/br_wheel_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint name="br_wheel_joint" type="continuous">
-    <origin xyz="0.91244 -0.14953 0.42506" rpy="1.5708 0 1.5708" />
+    <origin xyz="0.91244 -0.14953 0.42916" rpy="1.5708 0 1.5708" />
     <parent link="base_link" />
     <child link="br_wheel_link" />
     <axis xyz="0 0 -1" />
@@ -63,7 +63,7 @@
       <inertia ixx="0.064219" ixy="-9.3894E-07" ixz="6.5889E-08" iyy="0.064218" iyz="-3.839E-08" izz="0.1164" />
     </inertial>
     <visual>
-      <origin xyz="0 -0.4 0" rpy="0 0 0" />
+      <origin xyz="0 -0.3959 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://amiga_sim/meshes/bl_wheel_link.STL" />
       </geometry>
@@ -72,14 +72,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 -0.4 0" rpy="0 0 0" />
+      <origin xyz="0 -0.3959 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://amiga_sim/meshes/bl_wheel_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint name="bl_wheel_joint" type="continuous">
-    <origin xyz="0.27384 -0.15588 0.42506" rpy="-1.5708 0 -1.5708" />
+    <origin xyz="0.27384 -0.15588 0.42916" rpy="-1.5708 0 -1.5708" />
     <parent link="base_link" />
     <child link="bl_wheel_link" />
     <axis xyz="0 0 -1" />
@@ -92,7 +92,7 @@
       <inertia ixx="0.064219" ixy="-9.4004E-07" ixz="6.5887E-08" iyy="0.064218" iyz="-3.8393E-08" izz="0.1164" />
     </inertial>
     <visual>
-      <origin xyz="0 -0.4 0" rpy="0 0 0" />
+      <origin xyz="0 -0.3959 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://amiga_sim/meshes/fl_wheel_link.STL" />
       </geometry>
@@ -101,14 +101,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 -0.4 0" rpy="0 0 0" />
+      <origin xyz="0 -0.3959 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://amiga_sim/meshes/fl_wheel_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint name="fl_wheel_joint" type="continuous">
-    <origin xyz="0.27384 0.94812 0.42506" rpy="-1.5708 0 -1.5708" />
+    <origin xyz="0.27384 0.94812 0.42916" rpy="-1.5708 0 -1.5708" />
     <parent link="base_link" />
     <child link="fl_wheel_link" />
     <axis xyz="0 0 -1" />
@@ -121,7 +121,7 @@
       <inertia ixx="0.064219" ixy="9.3904E-07" ixz="-6.5889E-08" iyy="0.064218" iyz="-3.839E-08" izz="0.1164" />
     </inertial>
     <visual>
-      <origin xyz="0 0.4 0" rpy="0 0 0" />
+      <origin xyz="0 0.3959 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://amiga_sim/meshes/fr_wheel_link.STL" />
       </geometry>
@@ -130,14 +130,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0.4 0" rpy="0 0 0" />
+      <origin xyz="0 0.3959 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://amiga_sim/meshes/fr_wheel_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint name="fr_wheel_joint" type="continuous">
-    <origin xyz="0.91244 0.95447 0.42506" rpy="1.5708 0 1.5708" />
+    <origin xyz="0.91244 0.95447 0.42916" rpy="1.5708 0 1.5708" />
     <parent link="base_link" />
     <child link="fr_wheel_link" />
     <axis xyz="0 0 -1" />
