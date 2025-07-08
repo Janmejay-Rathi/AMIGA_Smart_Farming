@@ -1,32 +1,21 @@
 #!/usr/bin/env python
 
 import rospy
-from std_msgs.msg import Float64
+from geometry_msgs.msg import TwistStamped
 
 def main():
-    rospy.init_node('turning_commander')
+    rospy.init_node('straight_cmd_vel_publisher')
+    pub = rospy.Publisher('/amiga/cmd_vel', TwistStamped, queue_size=10)
+    rate = rospy.Rate(10)  # 10 Hz
 
-    # Publishers for each wheel
-    pubs = {
-        "br": rospy.Publisher('/br_wheel_joint_velocity_controller/command', Float64, queue_size=1),
-        "bl": rospy.Publisher('/bl_wheel_joint_velocity_controller/command', Float64, queue_size=1),
-        "fl": rospy.Publisher('/fl_wheel_joint_velocity_controller/command', Float64, queue_size=1),
-        "fr": rospy.Publisher('/fr_wheel_joint_velocity_controller/command', Float64, queue_size=1),
-    }
-
-    # Define turning speed (rad/s)
-    turning_speed = 1.0
-
-    rate = rospy.Rate(10)
     while not rospy.is_shutdown():
-        # Left wheels forward
-        pubs["bl"].publish(turning_speed)
-        pubs["fl"].publish(turning_speed)
+        msg = TwistStamped()
+        msg.header.stamp = rospy.Time.now()
+        msg.header.frame_id = "robot"
+        msg.twist.linear.x = 0.0   # Forward speed in m/s
+        msg.twist.angular.z = 0.3  # No rotation (straight)
 
-        # Right wheels backward
-        pubs["br"].publish(-turning_speed)
-        pubs["fr"].publish(-turning_speed)
-
+        pub.publish(msg)
         rate.sleep()
 
 if __name__ == '__main__':

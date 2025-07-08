@@ -4,6 +4,7 @@ import rospy
 from std_msgs.msg import Float64
 from sensor_msgs.msg import JointState
 from geometry_msgs.msg import TwistStamped
+from gazebo_msgs.msg import ModelStates
 
 class TwistToWheelController:
     def __init__(self):
@@ -15,6 +16,7 @@ class TwistToWheelController:
 
         self.L = wheel_base
         self.R = wheel_radius
+        self.model_name = 'amiga_model'
 
         # Publishers mapped to correct wheel sides
         self.pubs = {
@@ -34,23 +36,36 @@ class TwistToWheelController:
 
         self.latest_linear_x = 0.0
         self.latest_angular_z = 0.0
+        self.boosted_angular_z = 0.0
+
+        self.latest_gazebo_linear = 0.0
+        self.latest_gazebo_angular = 0.0
 
         # Subscribers
         rospy.Subscriber('/amiga/cmd_vel', TwistStamped, self.cmd_callback)
         rospy.Subscriber('/joint_states', JointState, self.joint_state_callback)
+        rospy.Subscriber('/gazebo/model_states', ModelStates, self.model_states_callback)
 
         rospy.spin()
 
+    def model_states_callback(self, msg):
+        if self.model_name in msg.name:
+            index = msg.name.index(self.model_name)
+            twist = msg.twist[index]
+            self.latest_gazebo_linear = (twist.linear.x ** 2 + twist.linear.y ** 2) ** 0.5
+            self.latest_gazebo_angular = twist.angular.z
+
     def cmd_callback(self, msg):
-        linear_vel = msg.twist.linear.x
-        angular_vel = msg.twist.angular.z * 20
+        linear_vel = (msg.twist.linear.x ** 2 + msg.twist.linear.y ** 2) ** 0.5
+        angular_vel = msg.twist.angular.z
 
         self.latest_linear_x = linear_vel
         self.latest_angular_z = angular_vel
+        self.boosted_angular_z = angular_vel * 10
 
         # Differential drive kinematics
-        v_left = (linear_vel - angular_vel * self.L / 2.0) / self.R
-        v_right = (linear_vel + angular_vel * self.L / 2.0) / self.R
+        v_left = (linear_vel - self.boosted_angular_z * self.L / 2.0) / self.R
+        v_right = (linear_vel + self.boosted_angular_z * self.L / 2.0) / self.R
 
         # Update commanded values
         self.commanded_velocities['bl_wheel_joint'] = v_left
@@ -69,7 +84,7 @@ class TwistToWheelController:
         output_lines = []
 
         # Log command input
-        output_lines.append(f"Subscribed linear.x: {self.latest_linear_x:.3f}, angular.z: {self.latest_angular_z:.3f}\n")
+        output_lines.append(f"Subscribed linear.x: {self.latest_linear_x:.3f}, angular.z: {self.latest_angular_z:.3f}, boosted_angular.z: {self.boosted_angular_z:.3f}\n")
 
         actual_velocities = {}
 
@@ -99,6 +114,19 @@ class TwistToWheelController:
 
             output_lines.append(f"fl - fr = {fl_fr_diff:.3f}   (Front left vs right)")
             output_lines.append(f"bl - br = {bl_br_diff:.3f}   (Back left vs right)")
+
+        output_lines.append("")
+
+        epsilon = 1e-6  # to prevent division by zero or small denominators
+
+        lin_err = abs(self.latest_gazebo_linear - self.latest_linear_x)
+        ang_err = abs(self.latest_gazebo_angular - self.latest_angular_z)
+
+        lin_pct = 0.0 if abs(self.latest_linear_x) < epsilon and abs(self.latest_gazebo_linear) < epsilon else 100.0 * lin_err / (abs(self.latest_linear_x) + epsilon)
+        ang_pct = 0.0 if abs(self.latest_angular_z) < epsilon and abs(self.latest_gazebo_angular) < epsilon else 100.0 * ang_err / (abs(self.latest_angular_z) + epsilon)
+
+        output_lines.append(f"Gazebo actual linear.x: {self.latest_gazebo_linear:.3f} vs Target: {self.latest_linear_x:.3f}   | Error: {lin_err:.3f} ({lin_pct:.1f}%)")
+        output_lines.append(f"Gazebo actual angular.z: {self.latest_gazebo_angular:.3f} vs Target: {self.latest_angular_z:.3f} vs Commanded: {self.boosted_angular_z:.3f}    | Error: {ang_err:.3f} ({ang_pct:.1f}%)")
 
         rospy.loginfo("\n" + "\n".join(output_lines) + "\n" + "-" * 50)
 
