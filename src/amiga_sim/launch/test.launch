@@ -20,7 +20,7 @@
   </include>
 
   <!-- Generate weed model before spawning -->
-  <node pkg="amiga_sim" type="gen_weeds_easy.py" name="weed_generator" output="screen"/>
+  <node pkg="amiga_sim" type="gen_weeds_hard.py" name="weed_generator" output="screen"/>
   <!-- Spawn the generated weed model -->
   <node pkg="gazebo_ros" type="spawn_model" name="spawn_weeds" output="screen"
       args="-file $(find amiga_sim)/models/farm_weeds/model.sdf -sdf -model farm_weeds -x 0 -y 0 -z 0" />

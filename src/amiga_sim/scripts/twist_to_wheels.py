@@ -72,7 +72,7 @@ class TwistToWheelController:
 
         self.latest_linear_x = linear_vel
         self.latest_angular_z = angular_vel
-        self.boosted_angular_z = angular_vel * 20
+        self.boosted_angular_z = angular_vel * 15
 
         # Differential drive kinematics
         v_left = (linear_vel - self.boosted_angular_z * self.L / 2.0) / self.R
