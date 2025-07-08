@@ -1,10 +1,13 @@
 #!/usr/bin/env python
 
+import os
 import rospy
 from std_msgs.msg import Float64
 from sensor_msgs.msg import JointState
 from geometry_msgs.msg import TwistStamped
 from gazebo_msgs.msg import ModelStates
+import matplotlib.pyplot as plt
+import atexit
 
 class TwistToWheelController:
     def __init__(self):
@@ -41,10 +44,18 @@ class TwistToWheelController:
         self.latest_gazebo_linear = 0.0
         self.latest_gazebo_angular = 0.0
 
+        self.gazebo_linear_history = []
+        self.target_linear_history = []
+        self.gazebo_angular_history = []
+        self.target_angular_history = []
+
         # Subscribers
         rospy.Subscriber('/amiga/cmd_vel', TwistStamped, self.cmd_callback)
         rospy.Subscriber('/joint_states', JointState, self.joint_state_callback)
         rospy.Subscriber('/gazebo/model_states', ModelStates, self.model_states_callback)
+
+        rospy.on_shutdown(self.plot_linear_velocity_history)
+        rospy.on_shutdown(self.plot_angular_velocity_history)
 
         rospy.spin()
 
@@ -128,7 +139,48 @@ class TwistToWheelController:
         output_lines.append(f"Gazebo actual linear.x: {self.latest_gazebo_linear:.3f} vs Target: {self.latest_linear_x:.3f}   | Error: {lin_err:.3f} ({lin_pct:.1f}%)")
         output_lines.append(f"Gazebo actual angular.z: {self.latest_gazebo_angular:.3f} vs Target: {self.latest_angular_z:.3f} vs Commanded: {self.boosted_angular_z:.3f}   | Error: {ang_err:.3f} ({ang_pct:.1f}%)")
 
+        self.gazebo_linear_history.append(self.latest_gazebo_linear)
+        self.target_linear_history.append(self.latest_linear_x)
+        self.gazebo_angular_history.append(self.latest_gazebo_angular)
+        self.target_angular_history.append(self.latest_angular_z)
+
         rospy.loginfo("\n" + "\n".join(output_lines) + "\n" + "-" * 50)
+
+    def plot_linear_velocity_history(self):
+        if not self.gazebo_linear_history or not self.target_linear_history:
+            return
+        script_dir = os.path.dirname(os.path.realpath(__file__))
+        parent_dir = os.path.dirname(script_dir)
+        data_dir = os.path.join(parent_dir, 'data')
+        plt.figure()
+        plt.plot(self.gazebo_linear_history, label='Actual Linear Velocity (m/s)')
+        plt.plot(self.target_linear_history, label='Target Linear Velocity (m/s)', linestyle='--')
+        plt.xlabel('Time Step')
+        plt.ylabel('Linear Velocity (m/s)')
+        plt.title('Actual vs Target Linear Velocity')
+        plt.legend()
+        plt.grid(True)
+        plt.savefig(data_dir + '/linear_velocity_comparison.png')
+        plt.close()
+        print("Figure (linear velocity) has been saved")
+
+    def plot_angular_velocity_history(self):
+        if not self.gazebo_angular_history or not self.target_angular_history:
+            return
+        script_dir = os.path.dirname(os.path.realpath(__file__))
+        parent_dir = os.path.dirname(script_dir)
+        data_dir = os.path.join(parent_dir, 'data')
+        plt.figure()
+        plt.plot(self.gazebo_angular_history, label='Actual Angular Velocity (rad/s)')
+        plt.plot(self.target_angular_history, label='Target Angular Velocity (rad/s)', linestyle='--')
+        plt.xlabel('Time Step')
+        plt.ylabel('Angular Velocity (rad/s)')
+        plt.title('Actual vs Target Angular Velocity')
+        plt.legend()
+        plt.grid(True)
+        plt.savefig(data_dir + '/angular_velocity_comparison.png')
+        plt.close()
+        print("Figure (angular velocity) has been saved")
 
 if __name__ == '__main__':
     TwistToWheelController()

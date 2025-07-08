@@ -9,7 +9,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.361 0.361 0.361</scale>
+            <scale>0.357 0.357 0.357</scale>
           </mesh>
         </geometry>
         <material>
@@ -25,7 +25,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.299 0.299 0.299</scale>
+            <scale>0.251 0.251 0.251</scale>
           </mesh>
         </geometry>
         <material>
@@ -41,7 +41,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.627 0.627 0.627</scale>
+            <scale>0.439 0.439 0.439</scale>
           </mesh>
         </geometry>
         <material>
@@ -57,7 +57,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.203 0.203 0.203</scale>
+            <scale>0.579 0.579 0.579</scale>
           </mesh>
         </geometry>
         <material>
@@ -73,7 +73,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.299 0.299 0.299</scale>
+            <scale>0.461 0.461 0.461</scale>
           </mesh>
         </geometry>
         <material>
@@ -89,7 +89,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.612 0.612 0.612</scale>
+            <scale>0.411 0.411 0.411</scale>
           </mesh>
         </geometry>
         <material>
@@ -105,7 +105,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.436 0.436 0.436</scale>
+            <scale>0.23 0.23 0.23</scale>
           </mesh>
         </geometry>
         <material>
@@ -121,7 +121,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.219 0.219 0.219</scale>
+            <scale>0.574 0.574 0.574</scale>
           </mesh>
         </geometry>
         <material>
@@ -137,7 +137,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.687 0.687 0.687</scale>
+            <scale>0.696 0.696 0.696</scale>
           </mesh>
         </geometry>
         <material>
@@ -153,7 +153,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.365 0.365 0.365</scale>
+            <scale>0.598 0.598 0.598</scale>
           </mesh>
         </geometry>
         <material>
@@ -169,7 +169,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.263 0.263 0.263</scale>
+            <scale>0.503 0.503 0.503</scale>
           </mesh>
         </geometry>
         <material>
@@ -185,7 +185,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.581 0.581 0.581</scale>
+            <scale>0.438 0.438 0.438</scale>
           </mesh>
         </geometry>
         <material>
@@ -201,7 +201,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.203 0.203 0.203</scale>
+            <scale>0.508 0.508 0.508</scale>
           </mesh>
         </geometry>
         <material>
@@ -217,7 +217,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.525 0.525 0.525</scale>
+            <scale>0.59 0.59 0.59</scale>
           </mesh>
         </geometry>
         <material>
@@ -233,7 +233,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.687 0.687 0.687</scale>
+            <scale>0.657 0.657 0.657</scale>
           </mesh>
         </geometry>
         <material>
@@ -249,7 +249,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.48 0.48 0.48</scale>
+            <scale>0.567 0.567 0.567</scale>
           </mesh>
         </geometry>
         <material>
@@ -265,7 +265,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.628 0.628 0.628</scale>
+            <scale>0.235 0.235 0.235</scale>
           </mesh>
         </geometry>
         <material>
@@ -281,7 +281,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.7 0.7 0.7</scale>
+            <scale>0.662 0.662 0.662</scale>
           </mesh>
         </geometry>
         <material>
@@ -297,7 +297,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.557 0.557 0.557</scale>
+            <scale>0.309 0.309 0.309</scale>
           </mesh>
         </geometry>
         <material>
@@ -313,7 +313,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.434 0.434 0.434</scale>
+            <scale>0.242 0.242 0.242</scale>
           </mesh>
         </geometry>
         <material>
@@ -329,7 +329,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.205 0.205 0.205</scale>
+            <scale>0.652 0.652 0.652</scale>
           </mesh>
         </geometry>
         <material>
@@ -345,7 +345,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.637 0.637 0.637</scale>
+            <scale>0.22 0.22 0.22</scale>
           </mesh>
         </geometry>
         <material>
@@ -361,7 +361,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.417 0.417 0.417</scale>
+            <scale>0.2 0.2 0.2</scale>
           </mesh>
         </geometry>
         <material>
@@ -377,7 +377,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.5 0.5 0.5</scale>
+            <scale>0.486 0.486 0.486</scale>
           </mesh>
         </geometry>
         <material>
@@ -393,7 +393,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.602 0.602 0.602</scale>
+            <scale>0.616 0.616 0.616</scale>
           </mesh>
         </geometry>
         <material>
@@ -409,7 +409,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.564 0.564 0.564</scale>
+            <scale>0.266 0.266 0.266</scale>
           </mesh>
         </geometry>
         <material>
@@ -425,7 +425,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.388 0.388 0.388</scale>
+            <scale>0.677 0.677 0.677</scale>
           </mesh>
         </geometry>
         <material>
@@ -441,7 +441,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.327 0.327 0.327</scale>
+            <scale>0.534 0.534 0.534</scale>
           </mesh>
         </geometry>
         <material>
@@ -457,7 +457,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.292 0.292 0.292</scale>
+            <scale>0.35 0.35 0.35</scale>
           </mesh>
         </geometry>
         <material>
@@ -473,7 +473,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.532 0.532 0.532</scale>
+            <scale>0.427 0.427 0.427</scale>
           </mesh>
         </geometry>
         <material>
@@ -489,7 +489,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.564 0.564 0.564</scale>
+            <scale>0.694 0.694 0.694</scale>
           </mesh>
         </geometry>
         <material>
@@ -505,7 +505,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.239 0.239 0.239</scale>
+            <scale>0.246 0.246 0.246</scale>
           </mesh>
         </geometry>
         <material>
@@ -521,7 +521,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.571 0.571 0.571</scale>
+            <scale>0.396 0.396 0.396</scale>
           </mesh>
         </geometry>
         <material>
@@ -537,7 +537,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.559 0.559 0.559</scale>
+            <scale>0.588 0.588 0.588</scale>
           </mesh>
         </geometry>
         <material>
@@ -553,7 +553,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.554 0.554 0.554</scale>
+            <scale>0.567 0.567 0.567</scale>
           </mesh>
         </geometry>
         <material>
@@ -569,7 +569,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.315 0.315 0.315</scale>
+            <scale>0.23 0.23 0.23</scale>
           </mesh>
         </geometry>
         <material>
@@ -585,7 +585,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.346 0.346 0.346</scale>
+            <scale>0.473 0.473 0.473</scale>
           </mesh>
         </geometry>
         <material>
@@ -601,7 +601,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.268 0.268 0.268</scale>
+            <scale>0.226 0.226 0.226</scale>
           </mesh>
         </geometry>
         <material>
@@ -617,7 +617,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.407 0.407 0.407</scale>
+            <scale>0.311 0.311 0.311</scale>
           </mesh>
         </geometry>
         <material>
@@ -633,7 +633,7 @@
         <geometry>
           <mesh>
             <uri>model://weed/meshes/weed.dae</uri>
-            <scale>0.401 0.401 0.401</scale>
+            <scale>0.279 0.279 0.279</scale>
           </mesh>
         </geometry>
         <material>
