@@ -6,7 +6,7 @@ import math
 # Parameters
 num_weeds = 40
 spacing = 0.56  # spacing between weeds (meters)
-angle_deg = 85
+angle_deg = 90
 angle_rad = math.radians(angle_deg)
 
 dx = spacing * math.cos(angle_rad)
