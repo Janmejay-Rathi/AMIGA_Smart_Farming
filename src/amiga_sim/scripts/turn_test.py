@@ -13,7 +13,7 @@ def main():
         msg.header.stamp = rospy.Time.now()
         msg.header.frame_id = "robot"
         msg.twist.linear.x = 0.0   # Forward speed in m/s
-        msg.twist.angular.z = 0.3  # No rotation (straight)
+        msg.twist.angular.z = 0.1  # No rotation (straight)
 
         pub.publish(msg)
         rate.sleep()

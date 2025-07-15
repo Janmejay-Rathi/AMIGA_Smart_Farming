@@ -7,7 +7,7 @@ import math
 num_weeds = 40
 spacing = 0.56       # spacing between weeds (meters)
 amplitude = 0.8      # sine wave height
-frequency = 0.4      # lower frequency for smoother curves
+frequency = 0.3      # lower frequency for smoother curves
 
 # Build SDF
 sdf = '<?xml version="1.0" ?>\n<sdf version="1.6">\n  <model name="farm_weeds">\n    <static>true</static>\n'

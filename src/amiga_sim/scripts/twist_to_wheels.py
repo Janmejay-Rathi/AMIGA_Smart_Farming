@@ -66,13 +66,32 @@ class TwistToWheelController:
             self.latest_gazebo_linear = (twist.linear.x ** 2 + twist.linear.y ** 2) ** 0.5
             self.latest_gazebo_angular = twist.angular.z
 
+    def boost_power(self, x):
+        max_cap = 2.5
+        abs_x = abs(x)
+        # If x is small, do not scale
+        if abs_x < 0.01:
+            return x
+        
+        # k0 = 2.181  # from curve fitting
+        # n0 = 0.754  # from curve fitting
+
+        k = 2.181  # from curve fitting
+        n = 0.754  # from curve fitting
+
+        a = k / (abs_x ** n)
+        # a = 15
+        y = a * abs_x
+        y_capped = min(y, max_cap)
+        return y_capped if x >= 0 else -y_capped
+    
     def cmd_callback(self, msg):
         linear_vel = (msg.twist.linear.x ** 2 + msg.twist.linear.y ** 2) ** 0.5
         angular_vel = msg.twist.angular.z
 
         self.latest_linear_x = linear_vel
         self.latest_angular_z = angular_vel
-        self.boosted_angular_z = angular_vel * 15
+        self.boosted_angular_z = self.boost_power(angular_vel)
 
         # Differential drive kinematics
         v_left = (linear_vel - self.boosted_angular_z * self.L / 2.0) / self.R
@@ -172,7 +191,7 @@ class TwistToWheelController:
         data_dir = os.path.join(parent_dir, 'data')
         plt.figure()
         plt.plot(self.gazebo_angular_history, label='Actual Angular Velocity (rad/s)')
-        plt.plot(self.target_angular_history, label='Target Angular Velocity (rad/s)', linestyle='--')
+        plt.plot(self.target_angular_history, label='Target Angular Velocity (rad/s)', linestyle=':')
         plt.xlabel('Time Step')
         plt.ylabel('Angular Velocity (rad/s)')
         plt.title('Actual vs Target Angular Velocity')
