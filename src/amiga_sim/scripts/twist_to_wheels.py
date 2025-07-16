@@ -49,6 +49,11 @@ class TwistToWheelController:
         self.gazebo_angular_history = []
         self.target_angular_history = []
 
+        # For timeout watchdog
+        self.last_cmd_time = rospy.Time.now()
+        self.cmd_timeout = rospy.Duration(0.5)  # seconds
+        self.watchdog_timer = rospy.Timer(rospy.Duration(0.1), self.watchdog_callback)
+
         # Subscribers
         rospy.Subscriber('/amiga/cmd_vel', TwistStamped, self.cmd_callback)
         rospy.Subscriber('/joint_states', JointState, self.joint_state_callback)
@@ -69,23 +74,18 @@ class TwistToWheelController:
     def boost_power(self, x):
         max_cap = 2.5
         abs_x = abs(x)
-        # If x is small, do not scale
         if abs_x < 0.01:
             return x
-        
-        # k0 = 2.181  # from curve fitting
-        # n0 = 0.754  # from curve fitting
-
-        k = 2.181  # from curve fitting
-        n = 0.754  # from curve fitting
-
+        k = 2.181
+        n = 0.754
         a = k / (abs_x ** n)
-        # a = 15
         y = a * abs_x
         y_capped = min(y, max_cap)
         return y_capped if x >= 0 else -y_capped
-    
+
     def cmd_callback(self, msg):
+        self.last_cmd_time = rospy.Time.now()
+
         linear_vel = (msg.twist.linear.x ** 2 + msg.twist.linear.y ** 2) ** 0.5
         angular_vel = msg.twist.angular.z
 
@@ -93,27 +93,30 @@ class TwistToWheelController:
         self.latest_angular_z = angular_vel
         self.boosted_angular_z = self.boost_power(angular_vel)
 
-        # Differential drive kinematics
         v_left = (linear_vel - self.boosted_angular_z * self.L / 2.0) / self.R
         v_right = (linear_vel + self.boosted_angular_z * self.L / 2.0) / self.R
 
-        # Update commanded values
         self.commanded_velocities['bl_wheel_joint'] = v_left
         self.commanded_velocities['fl_wheel_joint'] = v_left
         self.commanded_velocities['br_wheel_joint'] = v_right
         self.commanded_velocities['fr_wheel_joint'] = v_right
 
-        # Publish commands to correct wheels
         self.pubs['bl'].publish(v_left)
         self.pubs['fl'].publish(v_left)
         self.pubs['br'].publish(v_right)
         self.pubs['fr'].publish(v_right)
 
+    def watchdog_callback(self, event):
+        if rospy.Time.now() - self.last_cmd_time > self.cmd_timeout:
+            for joint in self.commanded_velocities:
+                self.commanded_velocities[joint] = 0.0
+            for pub in self.pubs.values():
+                pub.publish(0.0)
+
     def joint_state_callback(self, msg):
         name_to_index = {name: i for i, name in enumerate(msg.name)}
         output_lines = []
 
-        # Log command input
         output_lines.append(f"Subscribed linear.x: {self.latest_linear_x:.3f}, angular.z: {self.latest_angular_z:.3f}, boosted_angular.z: {self.boosted_angular_z:.3f}\n")
 
         actual_velocities = {}
@@ -125,7 +128,6 @@ class TwistToWheelController:
                 error = abs(commanded - actual)
                 output_lines.append(f"{joint} -> Commanded: {commanded:.3f}, Actual: {actual:.3f}, |Error|: {error:.3f}")
 
-        # Determine turning direction based on actual wheel velocities
         if all(j in actual_velocities for j in ['fl_wheel_joint', 'fr_wheel_joint', 'bl_wheel_joint', 'br_wheel_joint']):
             left_avg = (actual_velocities['fl_wheel_joint'] + actual_velocities['bl_wheel_joint']) / 2.0
             right_avg = (actual_velocities['fr_wheel_joint'] + actual_velocities['br_wheel_joint']) / 2.0
@@ -147,7 +149,7 @@ class TwistToWheelController:
 
         output_lines.append("")
 
-        epsilon = 1e-3  # to prevent division by zero or small denominators
+        epsilon = 1e-3
 
         lin_err = abs(self.latest_gazebo_linear - self.latest_linear_x)
         ang_err = abs(self.latest_gazebo_angular - self.latest_angular_z)
