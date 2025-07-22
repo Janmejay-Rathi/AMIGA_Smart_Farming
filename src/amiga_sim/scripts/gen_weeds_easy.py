@@ -4,8 +4,8 @@ import random
 import math
 
 # Parameters
-num_weeds = 6
-spacing = 0.56  # spacing between weeds (meters)
+num_weeds = 50
+spacing = 1.3  # spacing between weeds (meters)
 angle_deg = 90
 angle_rad = math.radians(angle_deg)
 

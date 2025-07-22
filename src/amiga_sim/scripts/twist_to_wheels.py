@@ -89,8 +89,8 @@ class TwistToWheelController:
             y = pose.position.y
             z = pose.position.z
 
-            d_lat = (y / self.earth_radius) * (180.0 / math.pi)
-            d_lon = (x / (self.earth_radius * math.cos(self.lat0 * math.pi / 180.0))) * (180.0 / math.pi)
+            d_lat = (x / self.earth_radius) * (180.0 / math.pi)
+            d_lon = (y / (self.earth_radius * math.cos(self.lat0 * math.pi / 180.0))) * (180.0 / math.pi)
 
             gps_msg = NavSatFix()
             gps_msg.header.stamp = rospy.Time.now()

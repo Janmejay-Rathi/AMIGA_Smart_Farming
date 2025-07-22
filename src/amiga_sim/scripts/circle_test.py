@@ -12,8 +12,8 @@ def main():
         msg = TwistStamped()
         msg.header.stamp = rospy.Time.now()
         msg.header.frame_id = "robot"
-        msg.twist.linear.x = 2.2   # Forward speed in m/s
-        msg.twist.angular.z = 0.0  # No rotation (straight)
+        msg.twist.linear.x = 5.0   # Forward speed in m/s
+        msg.twist.angular.z = -2.0  # No rotation (straight)
 
         pub.publish(msg)
         rate.sleep()
