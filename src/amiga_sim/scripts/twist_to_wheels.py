@@ -6,8 +6,9 @@ from std_msgs.msg import Float64
 from sensor_msgs.msg import JointState
 from geometry_msgs.msg import TwistStamped
 from gazebo_msgs.msg import ModelStates
+from sensor_msgs.msg import NavSatFix
 import matplotlib.pyplot as plt
-import atexit
+import math
 
 class TwistToWheelController:
     def __init__(self):
@@ -28,6 +29,16 @@ class TwistToWheelController:
             "br": rospy.Publisher('/br_wheel_joint_velocity_controller/command', Float64, queue_size=1),
             "fr": rospy.Publisher('/fr_wheel_joint_velocity_controller/command', Float64, queue_size=1),
         }
+
+        # Publisher for simulated GPS data
+        self.gps_pub = rospy.Publisher('/gps/pvt', NavSatFix, queue_size=1)
+
+        # GPS origin (flat Earth approximation)
+        # GPS simulation origin
+        self.lat0 = 40.0     # degrees north (e.g., Nebraska or Kansas)
+        self.lon0 = -93.0    # central meridian of Zone 15N
+        self.alt0 = 300.0    # elevation in meters (reasonable ground level)
+        self.earth_radius = 6378137.0  # meters
 
         # Storage for latest command velocities
         self.commanded_velocities = {
@@ -68,8 +79,28 @@ class TwistToWheelController:
         if self.model_name in msg.name:
             index = msg.name.index(self.model_name)
             twist = msg.twist[index]
+            pose = msg.pose[index]
+
             self.latest_gazebo_linear = (twist.linear.x ** 2 + twist.linear.y ** 2) ** 0.5
             self.latest_gazebo_angular = twist.angular.z
+
+            # Simulated GPS publishing
+            x = pose.position.x
+            y = pose.position.y
+            z = pose.position.z
+
+            d_lat = (y / self.earth_radius) * (180.0 / math.pi)
+            d_lon = (x / (self.earth_radius * math.cos(self.lat0 * math.pi / 180.0))) * (180.0 / math.pi)
+
+            gps_msg = NavSatFix()
+            gps_msg.header.stamp = rospy.Time.now()
+            gps_msg.header.frame_id = "gps_link"
+            gps_msg.latitude = self.lat0 + d_lat
+            gps_msg.longitude = self.lon0 + d_lon
+            gps_msg.altitude = self.alt0 + z
+            gps_msg.position_covariance_type = NavSatFix.COVARIANCE_TYPE_UNKNOWN
+
+            self.gps_pub.publish(gps_msg)
 
     def boost_power(self, x):
         max_cap = 2.5
