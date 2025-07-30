@@ -10,7 +10,7 @@ from sensor_msgs.msg import NavSatFix
 import matplotlib.pyplot as plt
 import math
 
-class TwistToWheelController:
+class SimController:
     def __init__(self):
         rospy.init_node('twist_to_wheels')
 
@@ -50,6 +50,7 @@ class TwistToWheelController:
 
         self.latest_linear_x = 0.0
         self.latest_angular_z = 0.0
+        self.boosted_linear_x = 0.0
         self.boosted_angular_z = 0.0
 
         self.latest_gazebo_linear = 0.0
@@ -102,7 +103,11 @@ class TwistToWheelController:
 
             self.gps_pub.publish(gps_msg)
 
-    def boost_power(self, x):
+    def boost_linear_power(self, x):
+        k = 2.0
+        return k * x
+
+    def boost_angular_power(self, x):
         max_cap = 2.5
         abs_x = abs(x)
         if abs_x < 0.01:
@@ -122,10 +127,11 @@ class TwistToWheelController:
 
         self.latest_linear_x = linear_vel
         self.latest_angular_z = angular_vel
-        self.boosted_angular_z = self.boost_power(angular_vel)
+        self.boosted_linear_x = self.boost_linear_power(linear_vel)
+        self.boosted_angular_z = self.boost_angular_power(angular_vel)
 
-        v_left = (linear_vel - self.boosted_angular_z * self.L / 2.0) / self.R
-        v_right = (linear_vel + self.boosted_angular_z * self.L / 2.0) / self.R
+        v_left = (self.boosted_linear_x - self.boosted_angular_z * self.L / 2.0) / self.R
+        v_right = (self.boosted_linear_x + self.boosted_angular_z * self.L / 2.0) / self.R
 
         self.commanded_velocities['bl_wheel_joint'] = v_left
         self.commanded_velocities['fl_wheel_joint'] = v_left
@@ -148,7 +154,8 @@ class TwistToWheelController:
         name_to_index = {name: i for i, name in enumerate(msg.name)}
         output_lines = []
 
-        output_lines.append(f"Subscribed linear.x: {self.latest_linear_x:.3f}, angular.z: {self.latest_angular_z:.3f}, boosted_angular.z: {self.boosted_angular_z:.3f}\n")
+        output_lines.append(f"Subscribed linear.x: {self.latest_linear_x:.3f}, Subscribed angular.z: {self.latest_angular_z:.3f}\n")
+        output_lines.append(f"Boosted linear.x: {self.boosted_linear_x:.3f}, Boosted angular.z: {self.boosted_angular_z:.3f}\n")
 
         actual_velocities = {}
 
@@ -235,4 +242,4 @@ class TwistToWheelController:
         print("Figure (angular velocity) has been saved")
 
 if __name__ == '__main__':
-    TwistToWheelController()
+    SimController()

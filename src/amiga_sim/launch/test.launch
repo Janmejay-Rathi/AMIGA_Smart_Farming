@@ -30,7 +30,7 @@
         args="-param robot_description -urdf -model amiga_model -x 0.0 -y 0.0 -z 0.0" />
 
   <!-- Bridge twist to wheeels -->
-  <node pkg="amiga_sim" type="twist_to_wheels.py" name="twist_to_wheels" output="screen" />
+  <node pkg="amiga_sim" type="sim_control.py" name="twist_to_wheels" output="screen" />
 
   <!-- launches rviz -->
   <include file="$(find amiga_sim)/launch/display.launch" />
