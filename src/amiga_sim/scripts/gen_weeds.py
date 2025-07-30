@@ -3,9 +3,9 @@ import os
 import random
 
 # Define weed layout
-rows, cols = 30, 15
-row_spacing = 0.56    # space between rows (Y-direction) 22 inches
-col_spacing = 0.89    # space between columns (X-direction) 35 inches
+rows, cols = 20, 10
+row_spacing = 1.18    # space between rows (Y-direction) 22 inches
+col_spacing = 1.87    # space between columns (X-direction) 35 inches
 quadrants = ["top_left", "top_right"]  # Add others as needed
 
 # Get signs for each quadrant
