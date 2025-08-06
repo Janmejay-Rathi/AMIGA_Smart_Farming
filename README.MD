@@ -1,22 +1,28 @@
 # AMIGA_SMART_FARMING (Navigation)
 
-1. Clone repository and make
+1. Clone repository and checkout the simulation branch
 ```
 git clone https://github.com/Janmejay-Rathi/AMIGA_Smart_Farming.git
-cd ~/AMIGA_Smart_Farming && catkin_make
+cd ~/AMIGA_Smart_Farming
+git checkout navigation
 ```
 
-2. Source the workspace
+2. Make the workspace
+```
+catkin_make
+```
+
+3. Source the workspace
 ```
 source devel/setup.bash
 ```
 
-3. Run the executable
+4. Run the navigation launch file
 
 ```
- roslaunch navigation_pkg goal_sim.launch
+roslaunch navigation_pkg goal_sim.launch
 ```
 
 # Credits
 
-Reach out to Ken Chen (kenken4016@gmail.com)
+Author: Ken Chen (kenken4016@gmail.com)
