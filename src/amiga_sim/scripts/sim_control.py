@@ -104,7 +104,7 @@ class SimController:
             self.gps_pub.publish(gps_msg)
 
     def boost_linear_power(self, x):
-        k = 2.0
+        k = 1.0
         return k * x
 
     def boost_angular_power(self, x):

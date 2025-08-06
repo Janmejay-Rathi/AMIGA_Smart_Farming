@@ -6,7 +6,7 @@ import random
 rows, cols = 20, 10
 row_spacing = 1.18    # space between rows (Y-direction) 22 inches
 col_spacing = 1.87    # space between columns (X-direction) 35 inches
-quadrants = ["top_left", "top_right"]  # Add others as needed
+quadrants = ["top_left", "top_right", "bottom_left", "bottom_right"]  # Add others as needed
 
 # Get signs for each quadrant
 def get_signs_for_quadrant(q):
