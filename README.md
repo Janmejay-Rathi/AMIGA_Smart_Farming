@@ -1,21 +1,26 @@
 # AMIGA_SMART_FARMING (Simulation Package)
 
-1. Clone repository and make
+1. Clone repository and checkout the simulation branch
 ```
 git clone https://github.com/Janmejay-Rathi/AMIGA_Smart_Farming.git
-cd ~/AMIGA_Smart_Farming && catkin_make
+cd ~/AMIGA_Smart_Farming
 git checkout simulation
 ```
 
-2. Source the workspace
+2. Make the workspace
+```
+catkin_make
+```
+
+3. Source the workspace
 ```
 source devel/setup.bash
 ```
 
-3. Run the standard simulation
+4. Run the standard simulation
 
 ```
- roslaunch amiga_sim sim.launch
+roslaunch amiga_sim sim.launch
 ```
 
 # Credits
