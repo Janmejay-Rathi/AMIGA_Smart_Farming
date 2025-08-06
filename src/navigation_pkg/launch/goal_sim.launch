@@ -1,0 +1,16 @@
+<launch>
+  <!-- Step 1: Run GPS_tracker.py -->
+  <node pkg="navigation_pkg" type="GPS_tracker.py" name="gps_tracker_node" output="screen" required="true">
+    <param name="use_python3" value="true"/>
+  </node>
+
+  <!-- Step 2: Run path_planner.py -->
+  <node pkg="navigation_pkg" type="path_planner.py" name="path_planner_node" output="screen" required="true">
+    <param name="use_python3" value="true"/>
+  </node>
+
+  <!-- Step 3: Run simple_controller.py -->
+  <node pkg="navigation_pkg" type="simple_controller.py" name="simple_controller_node" output="screen" required="true">
+    <param name="use_python3" value="true"/>
+  </node>
+</launch>

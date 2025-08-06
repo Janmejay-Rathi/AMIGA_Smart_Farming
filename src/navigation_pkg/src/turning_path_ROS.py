@@ -16,7 +16,8 @@ class Turn:
         self.current_gps_position = None
 
         # ROS publisher for waypoints in Path message format
-        self.path_pub = rospy.Publisher('/waypoints_turning_path', Path, queue_size=10)
+        # self.path_pub = rospy.Publisher('/waypoints_turning_path', Path, queue_size=10)
+        self.path_pub = rospy.Publisher('/local_waypoints_turning', Path, queue_size=10)
         self.gps_sub = rospy.Subscriber('/gps_xy_loc',Float32MultiArray,self.actual_gps_positionCB,queue_size=1)
 
     def get_gps_position(self):

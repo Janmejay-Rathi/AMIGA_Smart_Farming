@@ -1,0 +1,6 @@
+<launch>
+  <!-- Step 1: Run GPS_tracker.py -->
+  <node pkg="navigation_pkg" type="GPS_tracker.py" name="gps_tracker_node" output="screen" required="true">
+    <param name="use_python3" value="true"/>
+  </node>
+</launch>

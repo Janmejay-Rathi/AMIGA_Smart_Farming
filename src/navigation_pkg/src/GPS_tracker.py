@@ -15,7 +15,7 @@ y_points = []
 class GPSPlotter:
     def __init__(self):
         # Subscriber to NavSatFix topic
-        rospy.Subscriber('/gps/pvt', NavSatFix, self.navsatfix_callback)
+        rospy.Subscriber('/gps/pvt', NavSatFix, self.navsatfix_callback, queue_size=1)
         self.gps_xy_loc_pub = rospy.Publisher('/gps_xy_loc',Float32MultiArray,queue_size=1)
         self.starter = 0
         self.transformer = Transformer.from_crs("epsg:4326", "epsg:32633", always_xy=True)  # WGS84 to UTM
@@ -38,11 +38,11 @@ class GPSPlotter:
             y = y - self.y_offset
 
         # print(current_y_offset,current_x_offset)
-        x_final = -x
+        x_final = x
         y_final = y
         x_points.append(x_final)
         y_points.append(y_final)
-        print("Current x,y: ",x_final,y_final)
+        # print("Current x,y: ",x_final,y_final)
 
         msg = Float32MultiArray()
         msg.data = [x_final,y_final]
@@ -73,9 +73,10 @@ class GPSPlotter:
         plt.xlabel("X (meters)")
         plt.ylabel("Y (meters)")
         plt.grid(True)
+        plt.axis("equal")  # Ensure x and y are on the same scale
         plt.pause(0.001)  # For dynamic update
         plt.draw()
-        plt.savefig('/home/cosmos/catkin_ws_amiga/src/navigation_pkg/src/gps.jpg')
+        plt.savefig('/home/ken/AMIGA_Smart_Farming/src/amiga_sim/data/gps.png')
 
 def main():
     rospy.init_node('gps_plotter', anonymous=True)

@@ -1,0 +1,21 @@
+<launch>
+  <!-- Step 0: Run GPS_tracker.py -->
+  <node pkg="navigation_pkg" type="GPS_tracker.py" name="gps_tracker_node" output="screen" required="true">
+    <param name="use_python3" value="true"/>
+  </node>
+
+  <!-- Step 1: Run lane_detect_top_ROS.py -->
+  <node pkg="navigation_pkg" type="lane_detect_top_ROS.py" name="lane_detect_node" output="screen" required="true">
+    <param name="use_python3" value="true"/>
+  </node>
+
+  <!-- Step 2: Run waypoints_line_follow.py -->
+  <node pkg="navigation_pkg" type="waypoints_line_follow.py" name="waypoint_follow_node" output="screen" required="true">
+    <param name="use_python3" value="true"/>
+  </node>
+
+  <!-- Step 3: Run new_mpc.py -->
+  <node pkg="navigation_pkg" type="new_mpc.py" name="mpc_node" output="screen" required="true">
+    <param name="use_python3" value="true"/>
+  </node>
+</launch>

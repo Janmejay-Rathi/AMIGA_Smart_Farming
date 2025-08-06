@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import os
 import cv2
 import numpy as np
 import rospy
@@ -25,7 +26,10 @@ class PlantRowDetector:
         self.conf_threshold = conf_threshold
         self.row_dist_threshold = row_dist_threshold
         self.bridge = CvBridge()  # ROS <-> OpenCV bridge
-        self.image_subscriber = rospy.Subscriber("/oak1/rgb", CompressedImage, self.image_callback)
+        # Onboard Topic Subscribers
+        # self.image_subscriber = rospy.Subscriber("/oak1/rgb", CompressedImage, self.image_callback)
+        # Simulation Topic Subscribers
+        self.image_subscriber = rospy.Subscriber("/oak_d_camera_1/image_raw/compressed", CompressedImage, self.image_callback)
         self.image_Publisher = rospy.Publisher("/front_cam/image", Image, queue_size=1)
         self.heading_publisher = rospy.Publisher("/robot_heading_angle", Float64, queue_size=1)
         self.distance_publisher = rospy.Publisher("/row_distance", Float64, queue_size=1)
@@ -254,9 +258,10 @@ if __name__ == '__main__':
     rospy.init_node("plant_row_detector", anonymous=True)
 
     # Initialize the detector
+    script_dir = os.path.dirname(os.path.realpath(__file__))
     detector = PlantRowDetector(
-        model_path="/home/jurathi2/catkin_ws/src/navigation_pkg/src/line_follow/best.pt",
-        img_save_path='/home/jurathi2/catkin_ws/src/navigation_pkg/src/line_follow/',
+        model_path= script_dir + "/best.pt",
+        img_save_path= script_dir,
         mask_coords=(150, 550),
         conf_threshold=0.5,
         height_spacing=10,

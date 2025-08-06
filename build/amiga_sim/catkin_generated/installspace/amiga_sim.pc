@@ -1,0 +1,8 @@
+prefix=/home/ken/AMIGA_Smart_Farming/install
+
+Name: amiga_sim
+Description: Description of amiga_sim
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

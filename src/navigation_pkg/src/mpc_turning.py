@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import numpy as np
 import cvxpy as cp
 import matplotlib.pyplot as plt
@@ -22,7 +24,6 @@ class MPCController:
         self.cmd_pub = rospy.Publisher("/amiga/cmd_vel", TwistStamped, queue_size=10)
         # Subscribe to the /waypoint topic, expecting messages of type geometry_msgs/Point
         self.subscriber = rospy.Subscriber('/local_waypoints_turning', Path, self.callback,queue_size=1)
-
 
         rospy.sleep(1)  # Allow time for the publisher to set up
         rospy.spin()
@@ -131,7 +132,7 @@ class MPCController:
         # Show plot
         plt.grid(True)
         # plt.show()
-        plt.savefig('/home/cosmos/catkin_ws_amiga/src/navigation_pkg/src/mpc_path.jpg')
+        plt.savefig('/home/ken/AMIGA_Smart_Farming/src/amiga_sim/data/mpc_path.png')
 
 
     def main(self):
