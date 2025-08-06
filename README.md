@@ -25,4 +25,4 @@ roslaunch amiga_sim sim.launch
 
 # Credits
 
-Reach out to Ken Chen (kenken4016@gmail.com)
+Author: Ken Chen (kenken4016@gmail.com)
