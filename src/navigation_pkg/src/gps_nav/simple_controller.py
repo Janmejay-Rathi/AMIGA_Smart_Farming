@@ -93,22 +93,7 @@ class WaypointFollower:
         if self.last_wp_distance is None:
             self.last_wp_distance = distance
 
-        # ------------------------------------------------------------------
         # Overshoot detection logic
-        #
-        # If we have a previous waypoint to reference (i.e., current_wp_index > 0),
-        # compute the vector from the previous waypoint to the current one and
-        # the vector from the current waypoint to the robot. When the dot product
-        # of these two vectors is positive and the distance to the waypoint
-        # increases compared to the previous iteration, the robot has likely
-        # passed the waypoint without entering its acceptance radius.  In that
-        # case the waypoint is skipped.  If the two consecutive waypoints share
-        # exactly the same position, the segment vector becomes zero and the dot
-        # product test is meaningless.  For that special case we instead look
-        # for the robot moving away from the waypoint by more than a small
-        # margin while still having a significant yaw error.  This prevents the
-        # robot from spinning indefinitely on in‑place waypoints when it
-        # accidentally moves away.
         if self.current_wp_index > 0:
             prev_pose = self.current_path[self.current_wp_index - 1].pose
             seg_x = target_pose.position.x - prev_pose.position.x

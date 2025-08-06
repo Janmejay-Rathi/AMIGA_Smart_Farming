@@ -76,7 +76,7 @@ class GPSPlotter:
         plt.axis("equal")  # Ensure x and y are on the same scale
         plt.pause(0.001)  # For dynamic update
         plt.draw()
-        plt.savefig('/home/ken/AMIGA_Smart_Farming/src/amiga_sim/data/gps.png')
+        plt.savefig('/home/ken/AMIGA_Smart_Farming/src/navigation_pkg/data/gps.png')
 
 def main():
     rospy.init_node('gps_plotter', anonymous=True)

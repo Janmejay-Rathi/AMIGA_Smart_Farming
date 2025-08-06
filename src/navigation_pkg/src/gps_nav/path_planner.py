@@ -170,7 +170,7 @@ class WaypointGenerator:
     #     plt.ylim(min(y_all) - pad, max(y_all) + pad)
 
     #     # === Save plot ===
-    #     save_path = '/home/ken/AMIGA_onboard/src/navigation_pkg/data/planned_path.png'
+    #     save_path = '/home/ken/AMIGA_Smart_Farming/src/navigation_pkg/data/planned_path.png'
     #     os.makedirs(os.path.dirname(save_path), exist_ok=True)
     #     plt.savefig(save_path)
     #     plt.close()
@@ -216,7 +216,7 @@ class WaypointGenerator:
         # Reverse X axis
         plt.gca().invert_xaxis()
 
-        save_path = '/home/ken/AMIGA_onboard/src/navigation_pkg/data/planned_path.png'
+        save_path = '/home/ken/AMIGA_Smart_Farming/src/navigation_pkg/data/planned_path.png'
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
         plt.savefig(save_path)
         plt.close()
