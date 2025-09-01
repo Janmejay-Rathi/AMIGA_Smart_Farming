@@ -17,9 +17,7 @@ ROS 2 becomes useful if:
 Using ROS 2 adds some overhead (nodes, publishers/subscribers, QoS), but enables greater flexibility for future expansions.
 
 ---
-
 ## 📂 Folder Structure
-
 ```
 AMIGA_Smart_Farming/
 ├── build/
